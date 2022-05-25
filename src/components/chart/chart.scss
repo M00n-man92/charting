@@ -1,0 +1,377 @@
+.chart {
+    display: flex;
+    flex-direction: column;
+    .container {
+        height: 500px;
+        background-color: #f4fa9c;
+
+        // background-color: blueviolet;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        .title {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-size: 50px;
+                color: crimson;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            }
+            // margin-left: 350px;
+        }
+        .contain {
+            // background-color: blueviolet;
+            margin-left: 200px;
+            width: 800px;
+            height: 300px;
+            // margin-top: 20px;
+            display: flex;
+            align-items: center;
+            // justify-content:space-evenly;
+            .spot {
+                // background-color: red;
+                flex: 0.1;
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    font-size: 30px;
+                    color: crimson;
+                    font-weight: 400;
+                }
+            }
+            .embeded {
+                flex: 3;
+                margin-left: 20px;
+                width: 400px;
+                height: 75%;
+                img {
+                    width: 400px;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .information {
+                height: 60%;
+                // background-color: black;
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                .song {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .songtitle {
+                        // margin-bottom: 2px;
+                        span {
+                            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+                                Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+                            font-size: 22px;
+                            font-weight: 800;
+                            color: crimson;
+                        }
+                    }
+                    .artist {
+                        margin-bottom: 10px;
+                        span {
+                            font-size: 19px;
+                            font-weight: 400;
+
+                            color: crimson;
+                        }
+                    }
+                }
+                hr {
+                    margin: 0 auto;
+                    border-top: 1px solid crimson;
+                    border-bottom: none;
+                    width: 100%;
+                    color: crimson;
+                    // margin-top:20px;
+                    // margin-bottom: ;
+                }
+                .position {
+                    // margin-top: 20px;
+                    // background-color: blue;
+                    // margin-top: 10px;
+                    display: flex;
+                    // align-items: center;
+                    height: 100%;
+                    .lastweek {
+                        // background-color: red;
+                        width: 150px;
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        flex-direction: column;
+                        .jio {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: crimson;
+                        }
+                        .num {
+                            font-size: 19px;
+                            font-weight: 400;
+                            color: crimson;
+                        }
+                    }
+                    .verticalline {
+                        margin-left: 10px;
+                        width: 1px;
+                        background-color: crimson;
+                        height: 120px;
+                        float: left;
+                        border-top: 1px solid;
+                        border-bottom: none;
+                    }
+                    .thisweek {
+                        // background-color: red;
+                        width: 150px;
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        flex-direction: column;
+                        .jio {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: crimson;
+                        }
+                        .num {
+                            font-size: 19px;
+                            font-weight: 400;
+                            color: crimson;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider {
+        // background-color: red;
+        width: 100vw;
+        // margin-top:;
+        // background-color: #43dde6;
+        display: flex;
+        align-items: center;
+        height: 300px;
+
+        .leftslider {
+            position: relative;
+            top: -10px;
+            left: 100px;
+            color: black;
+            // background-color: #303a52;
+            img {
+                // color: black;
+                height: 40px;
+                width: 40px;
+                object-fit: contain;
+            }
+        }
+        .slidingness {
+            margin-left: 150px;
+            width: 60em;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            .slidertitle {
+                display: flex;
+                align-items: center;
+                span {
+                    color: crimson;
+                    font-size: 30px;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                }
+            }
+            .slidercomponent {
+                margin-top: 20px;
+                width: 400vw;
+                transition: all 0.5s ease-in-out;
+                margin-left: 5px;
+                display: flex;
+                align-items: center;
+
+                // padding: 0 30px;
+                // width              : 80em;
+                .slidersaltogether {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 200px;
+                    height: 220px;
+                    .sliderimage {
+                        width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            background-color: #f4fa9c;
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            object-fit: contain;
+                        }
+                    }
+                    .artistport {
+                        margin-top: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .artistname {
+                            font-size: 19px;
+                            color: crimson;
+                            font-weight: 400;
+                            margin-bottom: 5px;
+                        }
+                        .artistsong {
+                            font-size: 14px;
+                            color: crimson;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightslider {
+            position: relative;
+            top: -10px;
+            left: 100px;
+            // right: 140px;
+            // color: black;
+            // background-color: #303a52;
+            img {
+                color: black;
+                height: 40px;
+                width: 40px;
+                object-fit: contain;
+            }
+        }
+        
+    }
+    .tablecontent {
+        margin: 20px 120px;
+        hr{
+            border-bottom: 1px solid #dddddd; 
+        }
+        .tableing{
+            // margin-left: 100px;
+            // background-color: red;
+            border-collapse: separate;
+            margin: 25px 70px;
+            font-size: 0.9em;
+            min-width: 700px;
+            border-spacing: 0 15px;
+            .tablebody{
+                .tablerow{
+                    text-align: left;
+                    border-bottom: 1px solid #dddddd;
+                    // margin-top: 50px;
+                    .tablenumber{
+                        width: 70px;
+                       
+                        justify-content: center;
+                        // background-color: blue;
+                        padding: 12px 15px;
+                        font-size: 32px;
+                        color:goldenrod;
+                    }
+                    .tableimage{
+                        
+                        iframe{
+                            height: 120px;
+                            width: 140px;  
+                        }
+                            iframe:hover{
+                                transition: 0.3s all ease-in-out;
+                                height: 200px;
+                                width: 300px;
+                            
+                           
+                            
+                        }
+                        // padding: 12px 15px;
+                        img{
+                            object-fit: cover;
+                            width: 140px;
+                            height: 120px;
+                            border-radius: 5px;
+                        }
+                    }
+                    .tableinfo{
+                        display: flex;
+                        flex-direction: column;
+
+                       .tableartistinfo{
+                           display: flex;
+                           align-items: center;
+                           flex-direction: column;
+                           .tableartistinfoname{
+                               font-size: 19px;
+                               color: crimson;
+                               font-weight: 400;
+                           }
+                           .tableartistinfosong{
+                            font-size: 14px;
+                            color: crimson;
+                            font-weight: 300;
+                            
+                            
+                           }
+
+                       } 
+                       hr{
+                           border-bottom: 1px solid #dddddd;
+                           border-top: none;
+                       }
+                       .tablepositoin{
+                           display: flex;
+                           align-items: center;
+                           
+                           .lastweekspositoin{
+                            padding: 5px 4px;
+                               display:flex ;
+                               flex-direction: column;
+                               align-items: center;
+                               .lastweeking{
+                                font-size: 12px;
+                                color: crimson;
+                                font-weight: 300;
+                               }
+                               .lastweekingnumb{
+                                font-size: 14px;
+                                color: crimson;
+                                font-weight: 400;
+                               }
+                           }
+                           .verticalposition{
+                            margin-left: 10px;
+                            width: 1px;
+                            background-color: #dddddd;
+                            height: 70px;
+                            float: left;
+                            border-top: 1px solid;
+                            border-bottom: none;
+                           }
+
+                       }
+
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
