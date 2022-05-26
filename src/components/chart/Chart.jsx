@@ -172,8 +172,10 @@ export default function Chart() {
                         </tr>
                             {index === sec ? (
                                 <tr  className='secarea'>
-                                    
-                                       <td colSpan={10}>
+                                    <td>
+
+                                    </td>
+                                       <td colSpan={5}>
                                            <div className="divide">
                                            <iframe src={item.link} className='embededdiv'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                            
