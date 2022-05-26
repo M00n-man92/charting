@@ -27,7 +27,8 @@ export default function Chart() {
         <Navigation />
         <div className="container">
             <div className="title">
-                <h1>TOP 10 SONGS OF THE WEEK</h1>
+                <h1>TOP 20 SONGS OF THE WEEK</h1>
+
             </div>
             <div className="contain">
                 <div className="spot">
@@ -56,7 +57,7 @@ export default function Chart() {
                         </div>
                         <div className="verticalline">
                         </div>
-                        <div className="thisweek">
+                        <div className="lastweek">
                             <span className='jio'>
                                 WEEKS IN CHART
                             </span>
@@ -74,7 +75,13 @@ export default function Chart() {
             <div className="slidingness">
                 <div className="slidertitle">
                     <span>
-                        THIS WEEK IN THE CHARTS
+                    THIS WEEK IN THE CHART
+                    </span>
+
+                </div>
+                <div className="slidertitle">
+                    <span>
+                    Week of May 21st, 2022 
                     </span>
 
                 </div>

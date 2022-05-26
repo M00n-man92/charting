@@ -16,7 +16,7 @@ export default function Navigation() {
                     <div className="single">
                         <Link to="/" className='link'>
                             <span>
-                                CHART
+                                Chart
                             </span>
                         </Link>
 
@@ -24,7 +24,7 @@ export default function Navigation() {
                     <div className="single">
                         <Link className='link' to="/about">
                             <span>
-                                ABOUT US
+                                About Us
                             </span>
                         </Link>
                     </div>
