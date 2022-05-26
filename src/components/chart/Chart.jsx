@@ -176,9 +176,7 @@ export default function Chart() {
                                        <td colSpan={10}>
                                            <div className="divide">
                                            <iframe src={item.link} className='embededdiv'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                           <span >
-                                               SHARE
-                                           </span>
+                                           
                                            </div>
                                        
 

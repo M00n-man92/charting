@@ -9,7 +9,8 @@ export default function Footer() {
     <div className='footer'>
         <div className="inside">
         <div className="logo">
-                <img src="/assets/cover.jpg" alt="" className="logoimg" />
+        <img src="/assets/Ethiopian_Music_Chart_Logo_Design-11.png" alt="" className="logoimg" />
+                    <img src="/assets/Ethiopian_Music_Chart_Logo_Design-15.png" alt="" className="logoimg"/>
             </div>
             <div className="info">
                 
