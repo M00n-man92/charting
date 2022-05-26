@@ -3,11 +3,14 @@ import Navigation from '../navigation/Navigation'
 import "./chart.scss"
 import { ArrowForwardIosOutlined, ArrowBackIosNewOutlined } from '@mui/icons-material'
 import { useState } from 'react'
+import Footer from '../footer/Footer'
 
 
 export default function Chart() {
-    const first={"Weekly":535891,"May_21":2688256,"May_17":2152365,"meta_may_17":"Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 10 days ago 4 minutes, 58 seconds 2,152,365 views","meta_may_21":"Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 13 days ago 4 minutes, 58 seconds 2,688,256 views","link":"https://www.youtube.com/embed/Sbjl4OmYKwE","Artist":"Kal Kin","Song":" Eshi Kezias | እሺ ከዚያስ "}
-    const jsonfile=require("./lastlastone.json")
+    const [on, setOn] = useState(false)
+    const [sec, setSec] = useState(null)
+    const first = { "Weekly": 535891, "May_21": 2688256, "May_17": 2152365, "meta_may_17": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 10 days ago 4 minutes, 58 seconds 2,152,365 views", "meta_may_21": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 13 days ago 4 minutes, 58 seconds 2,688,256 views", "link": "https://www.youtube.com/embed/Sbjl4OmYKwE", "Artist": "Kal Kin", "Song": " Eshi Kezias | እሺ ከዚያስ " }
+    const jsonfile = require("./lastlastone.json")
     // const data=require("./data")
     const [itemm, setitemm] = useState(0)
     const nion = (digits) => {
@@ -31,8 +34,8 @@ export default function Chart() {
                     <span>1</span>
                 </div>
                 <div className="embeded">
-                <iframe width="400" height="225" src={first.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   
+                    <iframe width="400" height="225" src={first.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
                 <div className="information">
                     <div className="song">
@@ -79,7 +82,7 @@ export default function Chart() {
                     {jsonfile.map((item, i) => (
                         <div className="slidersaltogether">
                             <div className="sliderimage">
-                                
+
                                 {/* <img src={item.img} alt="" /> */}
                             </div>
                             <div className="artistport">
@@ -106,70 +109,157 @@ export default function Chart() {
             <hr />
             <table className='tableing'>
                 <tbody className='tablebody'>
-                    {jsonfile.map((item,index)=>(
-                        <tr className='tablerow'>
-                        <td className='tablenumber'>
-                            {index+2}
-                        </td>
-                        <td className='tableimage'>
-                        
-                        <iframe className='embededdiv'  src={item.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                        
-                            {/* <img src={item.img} alt="" /> */}
-                        </td>
-                        <td className='tableinfo'>
-                            <div className="tableartistinfo">
-                                <span className="tableartistinfoname">
-                                    {item.Artist}
-                                </span>
-                                <span className="tableartistinfosong">
-                                    {item.Song}
-                                </span>
-                            </div>
-                            <hr />
-                            <div className="tablepositoin">
-                                <div className="lastweekspositoin">
-                                    <span className="lastweeking">
-                                        last week position
+                    {jsonfile.map((item, index) => (
+                        <>{on ? (<><tr className='tablerow' onClick={(e) => {
+                            setOn(!on)
+                            setSec(index)
+                        }}>
+                            <td className='tablenumber'>
+                                {index + 2}
+                            </td>
+                            <td className='tableimage'>
+
+                                {/* <iframe className='embededdiv' src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+
+
+                                <img src="" alt="" />
+                            </td>
+                            <td className='tableinfo'>
+                                <div className="tableartistinfo">
+                                    <span className="tableartistinfoname">
+                                        {item.Artist}
                                     </span>
-                                    <span className="lastweekingnumb">
-                                       4
+                                    <span className="tableartistinfosong">
+                                        {item.Song}
                                     </span>
                                 </div>
-                                <div className="verticalposition">
-                                
-                                </div>
-                                <div className="lastweekspositoin">
-                                    <span className="lastweeking">
-                                        week in chart
-                                    </span>
-                                    <span className="lastweekingnumb">
-                                       5
-                                    </span>
-                                </div>
-                                <div className="verticalposition">
-                                
-                                </div>
-                                <div className="lastweekspositoin">
-                                    <span className="lastweeking">
-                                        peak position
-                                    </span>
-                                    <span className="lastweekingnumb">
-                                       1
-                                    </span>
+                                <hr />
+                                <div className="tablepositoin">
+                                    <div className="lastweekspositoin">
+                                        <span className="lastweeking">
+                                            last week position
+                                        </span>
+                                        <span className="lastweekingnumb">
+                                            4
+                                        </span>
+                                    </div>
+                                    <div className="verticalposition">
+
+                                    </div>
+                                    <div className="lastweekspositoin">
+                                        <span className="lastweeking">
+                                            week in chart
+                                        </span>
+                                        <span className="lastweekingnumb">
+                                            5
+                                        </span>
+                                    </div>
+                                    <div className="verticalposition">
+
+                                    </div>
+                                    <div className="lastweekspositoin">
+                                        <span className="lastweeking">
+                                            peak position
+                                        </span>
+                                        <span className="lastweekingnumb">
+                                            1
+                                        </span>
+                                    </div>
+
                                 </div>
 
-                            </div>
+                            </td>
+                        </tr>
+                            {index === sec ? (
+                                <tr  className='secarea'>
+                                    
+                                       <td colSpan={10}>
+                                           <div className="divide">
+                                           <iframe src={item.link} className='embededdiv'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                           <span >
+                                               SHARE
+                                           </span>
+                                           </div>
+                                       
 
-                        </td>
-                    </tr>
+                                       </td>
+
+                                </tr>
+                            ) : (
+                                <tr style={{ display: "none" }} >
+                                    
+                                </tr>
+                            )}
+
+                        </>) : (
+                            <tr className='tablerow' onClick={(e) => {
+                                setOn(!on)
+                                setSec(index)
+                            }}>
+                                <td className='tablenumber'>
+                                    {index + 2}
+                                </td>
+                                <td className='tableimage'>
+
+                                    <iframe className='embededdiv' src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                                    {/* <img src={item.img} alt="" /> */}
+                                </td>
+                                <td className='tableinfo'>
+                                    <div className="tableartistinfo">
+                                        <span className="tableartistinfoname">
+                                            {item.Artist}
+                                        </span>
+                                        <span className="tableartistinfosong">
+                                            {item.Song}
+                                        </span>
+                                    </div>
+                                    <hr />
+                                    <div className="tablepositoin">
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                last week position
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                4
+                                            </span>
+                                        </div>
+                                        <div className="verticalposition">
+
+                                        </div>
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                week in chart
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                5
+                                            </span>
+                                        </div>
+                                        <div className="verticalposition">
+
+                                        </div>
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                peak position
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                1
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        )}
+                        </>
                     ))}
-                    
+
                 </tbody>
             </table>
         </div>
-
+        <Footer />
 
     </div>)
 }
