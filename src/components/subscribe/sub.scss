@@ -28,7 +28,9 @@
                     margin-top: 20px;
                     margin-bottom: 20px;
                     width: inherit;
+
                     .texting {
+                        z-index: 0;
                         width: 25vw;
                     }
                 }
@@ -43,6 +45,7 @@
                 align-items: center;
                 justify-content: center;
                 button {
+                    background-color: white;
                     border: none;
                     cursor: pointer;
                     color: crimson;
