@@ -3,8 +3,9 @@
     flex-direction: column;
     .container {
         height: 500px;
-        background-color: #f4fa9c;
-
+        // background-color: #f4fa9c;
+        background-image: url(../../unnamed.png);
+        background-repeat: repeat;
         // background-color: blueviolet;
         width: inherit;
         display: flex;
@@ -16,7 +17,7 @@
             justify-content: center;
             h1 {
                 font-size: 50px;
-                color: crimson;
+                color:#f4fa9c;
                 
                 font-family: Tahoma, sans-serif;
             }
@@ -40,7 +41,7 @@
                 justify-content: center;
                 span {
                     font-size: 30px;
-                    color: crimson;
+                    color:#f4fa9c;
                     font-weight: 400;
                 }
             }
@@ -75,7 +76,7 @@
                             font-family: Trebuchet MS, sans-serif;
                             font-size: 22px;
                             font-weight: 800;
-                            color: crimson;
+                            color:#f4fa9c;
                         }
                     }
                     .artist {
@@ -84,16 +85,16 @@
                             font-size: 19px;
                             font-weight: 400;
                             font-family: Trebuchet MS, sans-serif;
-                            color: crimson;
+                            color:#f4fa9c;
                         }
                     }
                 }
                 hr {
                     margin: 0 auto;
-                    border-top: 1px solid crimson;
+                    border-top: 1px solid #f4fa9c;
                     border-bottom: none;
                     width: 100%;
-                    color: crimson;
+                    color: #f4fa9c;
                     // margin-top:20px;
                     // margin-bottom: ;
                 }
@@ -118,7 +119,7 @@
 
                             font-size: 11px;
                             font-weight: 400;
-                            color: crimson;
+                            color:#f4fa9c;
                         }
                         .num {
                             font-family: Trebuchet MS, sans-serif;
@@ -126,38 +127,19 @@
                             margin-top: 3px;
                             font-size: 19px;
                             font-weight: 400;
-                            color: crimson;
+                            color:#f4fa9c;
                         }
                     }
                     .verticalline {
                         margin-left: 10px;
                         width: 1px;
-                        background-color: crimson;
+                        background-color:#f4fa9c;
                         height: 120px;
                         float: left;
                         border-top: 1px solid;
                         border-bottom: none;
                     }
-                    .thisweek {
-                        // background-color: red;
-                        width: 150px;
-                        margin-top: 20px;
-                        margin-left: 10px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: start;
-                        flex-direction: column;
-                        .jio {
-                            font-size: 12px;
-                            font-weight: 400;
-                            color: crimson;
-                        }
-                        .num {
-                            font-size: 19px;
-                            font-weight: 400;
-                            color: crimson;
-                        }
-                    }
+                    
                 }
             }
         }
