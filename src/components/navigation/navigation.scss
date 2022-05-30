@@ -50,13 +50,15 @@
                     cursor: pointer;
                     color: white;
                     font-size: 16px;
-                    font-family: Arial, sans-serif;
+                    // src: url("../../fonts/Poppins-ExtraBold (1).ttf") format('truetype');
+                    font-family: "Poppins-Regular";
+                    // font-family: Arial, sans-serif;
                 }
             }
             .sub {
                 margin-left: 20px;
                 border: 1px solid white;
-                width: 80px;
+                width: 100px;
                 height: 30px;
                 display: flex;
                 align-items: center;
@@ -69,11 +71,11 @@
                     cursor: pointer;
                     color: white;
                     font-size: 16px;
-                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                    font-family: "Poppins-Regular";
                 }
             }
             .sub:hover {
-                width: 80px;
+                width: 100px;
                 height: 30px;
                 background-color: white;
 
@@ -85,7 +87,7 @@
                     font-family: Arial, sans-serif;
                     color: crimson;
                     font-size: 16px;
-                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                    font-family: "Poppins-Regular";
                 }
             }
         }

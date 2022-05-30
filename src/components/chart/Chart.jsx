@@ -3,6 +3,12 @@ import Navigation from '../navigation/Navigation'
 import "./chart.scss"
 import { ArrowForwardIosOutlined, ArrowBackIosNewOutlined } from '@mui/icons-material'
 import { useState } from 'react'
+import "../../fonts/Poppins-Bold.ttf"
+import "../../fonts/Poppins-ExtraBold (1).ttf"
+import "../../fonts/Poppins-Light.ttf"
+import "../../fonts/Poppins-Regular.ttf"
+import "../../fonts/Poppins-SemiBold.ttf"
+import "../../fonts/Poppins-Thin.ttf"
 import Footer from '../footer/Footer'
 
 
@@ -122,7 +128,8 @@ export default function Chart() {
                             setSec(index)
                         }}>
                             <td className='tablenumber'>
-                                {index + 2}
+                               {index + 2}
+                                
                             </td>
                             <td className='tableimage'>
 

@@ -18,8 +18,8 @@
             h1 {
                 font-size: 50px;
                 color:#f4fa9c;
-                
-                font-family: Tahoma, sans-serif;
+                // src: local("Poppins-ExtraBold (1)"), url("../../fonts/Poppins-ExtraBold\ \(1\).ttf");
+                font-family: "Poppins-ExtraBold (1)";
             }
             // margin-left: 350px;
         }
@@ -39,10 +39,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
                 span {
                     font-size: 30px;
                     color:#f4fa9c;
                     font-weight: 400;
+                    // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                font-family: "Poppins-Bold";
                 }
             }
             .embeded {
@@ -77,15 +80,21 @@
                             font-size: 22px;
                             font-weight: 800;
                             color:#f4fa9c;
+                            src: local("Poppins-SemiBold"), url("../../fonts/Poppins-SemiBold.ttf");
+                            font-family: "Poppins-SemiBold";
+                            // top100\src\fonts\Poppins-SemiBold.ttf
                         }
                     }
                     .artist {
                         margin-bottom: 10px;
                         span {
+                            // top100\src\fonts\Poppins-B.ttf
                             font-size: 19px;
                             font-weight: 400;
                             font-family: Trebuchet MS, sans-serif;
                             color:#f4fa9c;
+                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                            font-family: "Poppins-Bold";
                         }
                     }
                 }
@@ -116,9 +125,11 @@
                         flex-direction: column;
                         .jio {
                             font-family: Trebuchet MS, sans-serif;
-
+                            // top100\src\fonts\Poppins-Bold.ttf
+                            // src: local("Poppins-Thin"), url("../../fonts/Poppins-Light.ttf");
+                            font-family: "Poppins-Light";
                             font-size: 11px;
-                            font-weight: 400;
+                            // font-weight: 400;
                             color:#f4fa9c;
                         }
                         .num {
@@ -128,6 +139,8 @@
                             font-size: 19px;
                             font-weight: 400;
                             color:#f4fa9c;
+                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Light.ttf");
+                            font-family: "Poppins-Bold";
                         }
                     }
                     .verticalline {
@@ -167,7 +180,7 @@
             }
         }
         .slidingness {
-            margin-top: 10px;
+            margin-top: 20px;
             margin-left: 150px;
             width: 60em;
             display: flex;
@@ -179,10 +192,12 @@
                 // align-items: center;
                 flex-direction: column;
                 span {
-                    font-family: Impact, sans-serif;
+                    // font-family: Impact, sans-serif;
                     color: crimson;
                     font-size: 30px;
-                    margin-top: 10px;
+                    // margin-top: 10px;
+                    // src: local("Poppins-Bold"), url("../../fonts/Poppins-ExtraBold (1).ttf");
+                    font-family: "Poppins-Regular";
                     // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
                 }
             }
@@ -220,16 +235,18 @@
                         flex-direction: column;
                         align-items: center;
                         .artistname {
-                            font-family: Arial Black, sans-serif;
-
+                            // font-family: Arial Black, sans-serif;
+                            // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                            font-family: "Poppins-Bold";
                             font-size: 14px;
                             color: crimson;
                             font-weight: 400;
                             margin-bottom: 5px;
                         }
                         .artistsong {
-                            font-family: Trebuchet MS, sans-serif;
-
+                            // font-family: Trebuchet MS, sans-serif;
+                            // src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
+                            font-family: "Poppins-thin";
                             font-size: 11px;
                             color: crimson;
                             font-weight: 300;
@@ -266,7 +283,7 @@
             border-collapse:separate;
             margin: 25px 70px;
             font-size: 0.9em;
-            min-width: 700px;
+            min-width: 800px;
             
             border-spacing: 10px 15px;
             .tablebody{
@@ -282,8 +299,12 @@
                         justify-content: center;
                         // background-color: blue;
                         padding: 12px 15px;
-                        font-size: 32px;
+                        
                         color:goldenrod;
+                            font-size: 32px;
+                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                            font-family: "Poppins-Bold";
+                       
                     }
                     .tableimage{
                         background-color: #f4fa9c;
@@ -320,7 +341,9 @@
                            align-items: center;
                            flex-direction: column;
                            .tableartistinfoname{
-                            font-family: Trebuchet MS, sans-serif;
+                            // font-family: Trebuchet MS, sans-serif;
+                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                            font-family: "Poppins-Bold";
                             font-size: 16px;
                                color: crimson;
                                font-weight: 400;
@@ -329,8 +352,9 @@
                             font-size: 13px;
                             color: crimson;
                             font-weight: 300;
-                            font-family: Trebuchet MS, sans-serif;
-
+                            // font-family: Trebuchet MS, sans-serif;
+                            src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
+                            font-family: "Poppins-Light";
                             
                             
                            }
@@ -348,6 +372,7 @@
                            justify-content:space-between;
                         //    background-color: red;
                            .lastweekspositoin{
+                               
                             margin-left: 10px;
                             margin-right: 10px;
                             margin-top: 10px;
@@ -355,15 +380,17 @@
                                flex-direction: column;
                                align-items: center;
                                .lastweeking{
-                                font-family: Trebuchet MS, sans-serif;
-
+                                // font-family: Trebuchet MS, sans-serif;
+                                src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
+                                font-family: "Poppins-Light";
                                 font-size: 13px;
                                 color: crimson;
                                 font-weight: 300;
                                }
                                .lastweekingnumb{
                                 font-family: Trebuchet MS, sans-serif;
-
+                                src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                                font-family: "Poppins-Bold";
                                 font-size: 16px;
                                 color: crimson;
                                 font-weight: 400;
@@ -398,7 +425,7 @@
                                 color: crimson;
                                 cursor: pointer;
                                 font-size: 39px;
-                                font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                                // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
                             }
                         }
