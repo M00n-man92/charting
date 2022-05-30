@@ -4,13 +4,14 @@
     background-color: crimson;
     display: flex;
     align-items: center;
+    justify-content: center;
     .inside {
         display: flex;
         align-items: center;
         text-decoration: none;
-        width: 1100px;
+        min-width: 70em;
         // background-color: blueviolet;
-        margin-left: 100px;
+        // margin-left: 100px;
         justify-content: space-between;
         .logo {
             display: flex;

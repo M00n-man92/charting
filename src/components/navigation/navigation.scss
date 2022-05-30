@@ -1,3 +1,8 @@
+@import "../../global.scss";
+@media (min-width: 40em) {
+    .navigation {
+    }
+}
 .navigation {
     height: 70px;
     position: sticky;
@@ -6,17 +11,28 @@
     background-color: crimson;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    @include mobile {
+        // background-color: aqua;
+        max-height: 45px;
+    }
     //    top: 0px;
     // background-color:#040406;
     .inside {
         display: flex;
         align-items: center;
         text-decoration: none;
-        width: 1100px;
-        // background-color: blueviolet;
-        margin-left: 100px;
+        min-width: 70em;
+        // 
+        // margin-left: 10%;
         justify-content: space-between;
+        @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+            max-width: 40em;
+            background-color: blueviolet;
+        }
         .logo {
             display: flex;
             align-items: center;
@@ -29,24 +45,43 @@
             //    margin-left: 130px;
 
             // background-color: blue;
-
+            @include mobile {
+                max-width: 40px;
+                max-height: 40px;
+                // background-color: red;
+            }
             img {
                 object-fit: contain;
                 margin-left: 5px;
                 height: 50px;
                 width: 50px;
+                @include mobile{
+                    max-width: 40px;
+                    width: 40px;
+                }
             }
         }
         .info {
             margin-left: 240px;
-            width: 400px;
+            min-width: 400px;
             // background-color:black;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @include mobile{
+                margin-left: 0px;
+justify-content:end;
+
+            }
             .single {
                 margin-left: 20px;
+                @include mobile{
+                    margin-left: 5px;
+                }
                 span {
+                    @include mobile{
+                        font-size: 13px;
+                    }
                     cursor: pointer;
                     color: white;
                     font-size: 16px;
@@ -56,6 +91,10 @@
                 }
             }
             .sub {
+                @include mobile{
+                    margin-left: 5px;
+                    max-width: 70px;
+                }
                 margin-left: 20px;
                 border: 1px solid white;
                 width: 100px;
@@ -65,6 +104,9 @@
                 justify-content: center;
 
                 button {
+                    @include mobile{
+                        font-size: 13px;
+                    }
                     background-color: inherit;
                     font-family: Arial, sans-serif;
                     border: none;
@@ -93,8 +135,4 @@
         }
     }
 }
-.bigger{
-    width: 500px;
-    height: 100vh;
-    background-color: red;
-}
+
