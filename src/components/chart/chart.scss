@@ -4,8 +4,10 @@
     .container {
         height: 500px;
         // background-color: #f4fa9c;
+        
         background-image: url(../../unnamed.png);
-        background-repeat: repeat;
+        background-size: cover;
+background-position:50% 50%;
         // background-color: blueviolet;
         width: inherit;
         display: flex;
