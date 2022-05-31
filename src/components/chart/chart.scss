@@ -3,23 +3,23 @@
     flex-direction: column;
     .container {
         height: 500px;
-        // background-color: #f4fa9c;
-        
+        // background-color: #f7d046;
+
         background-image: url(../../unnamed.png);
         background-size: cover;
-background-position:50% 50%;
+        background-position: 50% 50%;
         // background-color: blueviolet;
         width: inherit;
         display: flex;
         flex-direction: column;
         .title {
-            margin-top: 40px;
+            margin-top: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
             h1 {
                 font-size: 50px;
-                color:#f4fa9c;
+                color: #f7d046;
                 // src: local("Poppins-ExtraBold (1)"), url("../../fonts/Poppins-ExtraBold\ \(1\).ttf");
                 font-family: "Poppins-ExtraBold (1)";
             }
@@ -27,17 +27,15 @@ background-position:50% 50%;
         }
         .contain {
             // background-color: blueviolet;
-            margin-left: 18%;
-           min-width: 52em;
+            margin-left: 13%;
+           width: 62em;
             min-height: 300px;
             // margin-top: 20px;
             display: flex;
             align-items: center;
-            justify-content:center;
+            justify-content:space-evenly;
             margin-right: 20%;
-            @media (max-width:40em) {
-
-                
+            @media (max-width: 40em) {
             }
             .spot {
                 // background-color: red;
@@ -46,16 +44,16 @@ background-position:50% 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+
                 span {
-                    @media (min-width:75em) {
+                    @media (min-width: 75em) {
                         font-size: 40px;
                     }
                     font-size: 30px;
-                    color:#f4fa9c;
+                    color: #f7d046;
                     font-weight: 400;
                     // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                font-family: "Poppins-Bold";
+                    font-family: "Poppins-Bold";
                 }
             }
             .embeded {
@@ -64,7 +62,7 @@ background-position:50% 50%;
                 min-width: 400px;
                 height: 75%;
                 // background-color: black;
-                iframe{
+                iframe {
                     min-width: 25em;
                     min-height: 225px;
                 }
@@ -94,9 +92,9 @@ background-position:50% 50%;
                             font-family: Trebuchet MS, sans-serif;
                             font-size: 22px;
                             font-weight: 800;
-                            color:#f4fa9c;
-                            src: local("Poppins-SemiBold"), url("../../fonts/Poppins-SemiBold.ttf");
-                            font-family: "Poppins-SemiBold";
+                            color: #f7d046;
+                            // src: local("Poppins-Bold"), url("../../fonts/Poppins-SemiBold.ttf");
+                            font-family: "Poppins-Regular";
                             // top100\src\fonts\Poppins-SemiBold.ttf
                         }
                     }
@@ -107,18 +105,18 @@ background-position:50% 50%;
                             font-size: 19px;
                             font-weight: 400;
                             font-family: Trebuchet MS, sans-serif;
-                            color:#f4fa9c;
-                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                            font-family: "Poppins-Bold";
+                            color: #f7d046;
+                            // src: local("Poppins-Thin"), url("../../fonts/Poppins-Bold.ttf");
+                            font-family: "Poppins-Thin";
                         }
                     }
                 }
                 hr {
                     margin: 0 auto;
-                    border-top: 1px solid #f4fa9c;
+                    border-top: 1px solid #f7d046;
                     border-bottom: none;
-                    width: 100%;
-                    color: #f4fa9c;
+                    width: 90%;
+                    color: #f7d046;
                     // margin-top:20px;
                     // margin-bottom: ;
                 }
@@ -139,13 +137,13 @@ background-position:50% 50%;
                         justify-content: start;
                         flex-direction: column;
                         .jio {
-                            font-family: Trebuchet MS, sans-serif;
+                            // font-family: Trebuchet MS, sans-serif;
                             // top100\src\fonts\Poppins-Bold.ttf
                             // src: local("Poppins-Thin"), url("../../fonts/Poppins-Light.ttf");
-                            font-family: "Poppins-Light";
-                            font-size: 11px;
+                            font-family: "Poppins-Regular";
+                            font-size: 13px;
                             // font-weight: 400;
-                            color:#f4fa9c;
+                            color: #f7d046;
                         }
                         .num {
                             font-family: Trebuchet MS, sans-serif;
@@ -153,28 +151,85 @@ background-position:50% 50%;
                             margin-top: 3px;
                             font-size: 19px;
                             font-weight: 400;
-                            color:#f4fa9c;
+                            color: #f7d046;
                             src: local("Poppins-Bold"), url("../../fonts/Poppins-Light.ttf");
                             font-family: "Poppins-Bold";
                         }
                     }
                     .verticalline {
+                        margin-top: 10px;
                         margin-left: 10px;
-                        width: 1px;
-                        background-color:#f4fa9c;
-                        height: 120px;
+                        width: 0.1px;
+                        background-color: #f7d046;
+                        height: 80%;
                         float: left;
-                        border-top: 1px solid;
+                        border-top: 0.5px solid;
                         border-bottom: none;
                     }
-                    
+                }
+            }
+            .socilas {
+                height: 70%;
+
+                // background-color: #333333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .socialicon {
+                    color: #f7d046;
+                    cursor: pointer;
+                }
+                .iconsline {
+                    display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    flex-direction: column;
+                    //
+                    .socialinfo {
+                        width: 100%;
+                        cursor: pointer;
+                        padding: 2px 2px;
+                        border: 0.5px solid #dddddd;
+                        border-radius: 2px;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 7px;
+                        .info {
+                            color: #f7d046;
+                            font-size: 11px;
+                        }
+                        .socialicon {
+                            margin-right: 5px;
+                            color: #f7d046;
+                            font-size: 16px;
+                        }
+                    }
+                    .socialinfo:hover {
+                        cursor: pointer;
+                        padding: 2px 2px;
+                        border: 0.5px solid #dddddd;
+                        border-radius: 2px;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 7px;
+                        background-color: #dddddd;
+                        .info {
+                            color: crimson;
+                            font-size: 11px;
+                        }
+                        .socialicon {
+                            margin-right: 5px;
+                            color: crimson;
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
     }
     .slider {
         // background-color: red;
-        width: 100vw;
+        width: 100%;
         // margin-top:;
         // background-color: #43dde6;
         display: flex;
@@ -184,7 +239,7 @@ background-position:50% 50%;
 
         .leftslider {
             position: relative;
-            top: 20px;
+            top: 60px;
             // left: 10px;
             cursor: pointer;
             // color: black;
@@ -197,14 +252,14 @@ background-position:50% 50%;
             }
         }
         .slidingness {
-            margin-top: 20px;
+            margin-top: 100px;
             // margin-left: 150px;
             width: 60em;
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
+            // margin-bottom: 100px;
             .slidertitle {
-                
                 display: flex;
                 // align-items: center;
                 flex-direction: column;
@@ -214,12 +269,12 @@ background-position:50% 50%;
                     font-size: 30px;
                     // margin-top: 10px;
                     // src: local("Poppins-Bold"), url("../../fonts/Poppins-ExtraBold (1).ttf");
-                    font-family: "Poppins-Regular";
+                    font-family: "Poppins-Bold";
                     // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
                 }
             }
             .slidercomponent {
-                margin-top: 20px;
+                margin-top: 40px;
                 width: 400vw;
                 transition: all 0.5s ease-in-out;
                 margin-left: 5px;
@@ -236,14 +291,14 @@ background-position:50% 50%;
                     height: 220px;
                     .sliderimage {
                         width: 100px;
-                            height: 100px;
-                            border-radius: 50%;
-                            background-color: #f4fa9c;
+                        height: 100px;
+                        border-radius: 50%;
+                        background-color: #f7d046;
                         img {
                             width: 100px;
                             height: 100px;
                             border-radius: 50%;
-                            object-fit: contain;
+                            object-fit: cover;
                         }
                     }
                     .artistport {
@@ -275,7 +330,7 @@ background-position:50% 50%;
 
         .rightslider {
             position: relative;
-            top: 20px;
+            top: 60px;
             left: 50px;
             cursor: pointer;
             // right: 140px;
@@ -288,175 +343,251 @@ background-position:50% 50%;
                 object-fit: contain;
             }
         }
-        
     }
     .tablecontent {
-        margin: 20px 120px;
+        // margin: 20px 120px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
         // background-color: red;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        hr{
-            border-bottom: 1px solid #dddddd; 
+        hr {
+            width: 100%;
+            border-bottom: 1px solid #dddddd;
         }
-        .tableing{
+        .tableing {
             // margin-left: 100px;
             // background-color: red;
-            border-collapse:separate;
-            margin: 25px 70px;
+            margin-top: 3%;
+            border-collapse: separate;
+            margin-left: 16%;
+            margin-right: 15%;
             font-size: 0.9em;
-            min-width: 800px;
-            
-            border-spacing: 10px 15px;
-            .tablebody{
-                
-                .tablerow{
-                    cursor:pointer;
+            width: 850px;
+
+            // border-spacing: 10px 15px;
+
+            .tablebody {
+                .tablerow {
+                    cursor: pointer;
                     text-align: left;
                     border-bottom: 1px solid #dddddd;
                     margin-top: 50px;
-                    .tablenumber{
+                    .tablerow:hover {
+                        color: #333333;
+                    }
+                    .tablenumber {
                         width: 70px;
-                       
+
                         justify-content: center;
                         // background-color: blue;
-                        padding: 12px 15px;
-                        
-                        color:goldenrod;
-                            font-size: 32px;
-                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                            font-family: "Poppins-Bold";
-                       
+                        // padding: 12px 15px;
+
+                        color: goldenrod;
+                        font-size: 32px;
+                        src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                        font-family: "Poppins-Bold";
                     }
-                    .tableimage{
-                        background-color: #f4fa9c;
+                    .tableimage {
+                        // background-color: #f7d046;
                         height: 120px;
-                        width: 140px;  
-                        iframe{
+                        width: 140px;
+                        iframe {
                             border: none;
                             height: 120px;
-                            width: 140px;  
+                            width: 140px;
                         }
-                            iframe:hover{
-                                transition: 0.3s all ease-in-out;
-                                // height: 200px;
-                                // width: 300px;
-                            
-                           
-                            
+                        iframe:hover {
+                            transition: 0.3s all ease-in-out;
+                            // height: 200px;
+                            // width: 300px;
                         }
                         // padding: 12px 15px;
-                        img{
+                        img {
                             object-fit: cover;
                             width: 140px;
-                            height: 120px;
+                            height: inherit;
                             border-radius: 5px;
                         }
                     }
-                    .tableinfo{
+                    .tableinfo {
                         display: flex;
                         flex-direction: column;
                         margin-bottom: 10px;
 
-                       .tableartistinfo{
-                           display: flex;
-                           align-items: center;
-                           flex-direction: column;
-                           .tableartistinfoname{
-                            // font-family: Trebuchet MS, sans-serif;
-                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                            font-family: "Poppins-Bold";
-                            font-size: 16px;
-                               color: crimson;
-                               font-weight: 400;
-                           }
-                           .tableartistinfosong{
-                            font-size: 13px;
-                            color: crimson;
-                            font-weight: 300;
-                            // font-family: Trebuchet MS, sans-serif;
-                            src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
-                            font-family: "Poppins-Light";
-                            
-                            
-                           }
-
-                       } 
-                       hr{
-                           border-bottom: 1px solid #dddddd;
-                           border-top: none;
-                           margin-top: 10px;
-                       }
-                       .tablepositoin{
-                           display: flex;
-                           align-items: center;
-
-                           justify-content:space-between;
-                        //    background-color: red;
-                           .lastweekspositoin{
-                               
-                            margin-left: 10px;
-                            margin-right: 10px;
-                            margin-top: 10px;
-                               display:flex ;
-                               flex-direction: column;
-                               align-items: center;
-                               .lastweeking{
+                        .tableartistinfo {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            .tableartistinfoname {
                                 // font-family: Trebuchet MS, sans-serif;
-                                src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
-                                font-family: "Poppins-Light";
+                                // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                                font-family: "Poppins-SemiBold";
+                                font-size: 15px;
+                                color: crimson;
+                                font-weight: 400;
+                            }
+                            .tableartistinfosong {
                                 font-size: 13px;
                                 color: crimson;
                                 font-weight: 300;
-                               }
-                               .lastweekingnumb{
-                                font-family: Trebuchet MS, sans-serif;
-                                src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                                font-family: "Poppins-Bold";
-                                font-size: 16px;
-                                color: crimson;
-                                font-weight: 400;
-                               }
-                           }
-                           .verticalposition{
-                            margin-left: 10px;
-                            width: 1px;
-                            background-color: #dddddd;
-                            height: 70px;
-                            float: left;
-                            border-top: 1px solid;
-                            border-bottom: none;
-                           }
-
-                       }
-
-                    }
-                }
-                .secarea{
-                   
-                    // background-color: black;
-                    
-                        .divide{
-                            
-                            .embededdiv{
-                                height: 300px;
-                                width:700px;
-                            }
-                            span{
-                                margin-left: 20px;
-                                color: crimson;
-                                cursor: pointer;
-                                font-size: 39px;
-                                // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
+                                // font-family: Trebuchet MS, sans-serif;
+                                src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
+                                font-family: "Poppins-Light";
                             }
                         }
-                    
+                        hr {
+                            border-bottom: 1px solid #dddddd;
+                            border-top: none;
+                            margin-top: 10px;
+                        }
+                        .tablepositoin {
+                            display: flex;
+                            align-items: center;
+
+                            justify-content: space-between;
+                            //    background-color: red;
+                            .lastweekspositoin {
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                .lastweeking {
+                                    // font-family: Trebuchet MS, sans-serif;
+                                    // src: local("Poppins-Light"), url("../../fonts/Poppins-Light.ttf");
+                                    font-family: "Poppins-Regular";
+                                    font-size: 13px;
+                                    color: crimson;
+                                    font-weight: 300;
+                                }
+                                .lastweekingnumb {
+                                    font-family: Trebuchet MS, sans-serif;
+                                    src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                                    font-family: "Poppins-Bold";
+                                    font-size: 16px;
+                                    color: crimson;
+                                    font-weight: 400;
+                                }
+                            }
+                            .verticalposition {
+                                margin-left: 10px;
+                                width: 1px;
+                                background-color: #dddddd;
+                                height: 70px;
+                                float: left;
+                                border-top: 1px solid;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    .tableicons {
+                        // margin-left: 100px;
+                        // display: flex;
+                        // align-items: center;
+                        // background-color: red;
+                        height: inherit;
+
+                        width: 100px;
+                        transition: all 0.5s ease-in-out;
+                        .divicons {
+                            height: inherit;
+                            transition: all 0.5s ease-in-out;
+                            // background-color: red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .socialicon {
+                                margin-bottom: 22px;
+                                color: crimson;
+                                
+                            }
+                            
+                            
+                            .secondicons {
+                                // background-color: red;
+                                display: none;
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            
+                                .socialinfo {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content:space-evenly;
+                                    width: 80px;
+                                    border: 0.5px solid crimson;
+                                    border-radius: 3px;
+                                    margin-top: 10px;
+                                    height: 25px;
+                                    .socialiconone {
+                                        color: crimson;
+                                        font-size: 16px;
+                                    }
+                                    .info {
+                                        margin-left: 2px;
+                                        span {
+                                            color: crimson;
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                                .socialinfo:hover{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content:space-evenly;
+                                    width: 80px;
+                                    background-color: crimson;
+                                    // border: 0.5px solid crimson;
+                                    border-radius: 3px;
+                                    margin-top: 10px;
+                                    height: 25px;
+                                    .socialiconone {
+                                        color: white;
+                                        font-size: 16px;
+                                    }
+                                    .info {
+                                        margin-left: 2px;
+                                        span {
+                                            color: white;
+                                            font-size: 11px;
+                                        }
+                                    }
+
+                                }
+                            }
+                            
+                            
+
+                        }
+                    }
                 }
+                .secarea {
+                    // background-color: black;
 
-
+                    .divide {
+                        .embededdiv {
+                            height: 300px;
+                            width: 700px;
+                        }
+                        span {
+                            margin-left: 20px;
+                            color: crimson;
+                            cursor: pointer;
+                            font-size: 39px;
+                            // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                        }
+                    }
+                }
+                tr:hover {
+                    background-color: #f8f8f8;
+                }
             }
         }
-
     }
 }
