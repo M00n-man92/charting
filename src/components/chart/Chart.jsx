@@ -41,7 +41,7 @@ export default function Chart({open,setOpen}) {
             console.log(itemm)
         }
     }
-    return (<div className={'chart '+(!open && "active")}>
+    return (<div className={'chart '+(open && "active")}>
         <div className="container">
             <div className="title">
                 <h1>TOP 20 SONGS OF THE WEEK</h1>

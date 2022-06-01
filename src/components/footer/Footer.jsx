@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 export default function Footer({open}) {
   return (
-    <div className={'footer '+ (!open && "active") } >
+    <div className={'footer '+ (open && "active") } >
         <div className="inside">
         <div className="logo">
         <img src="/assets/Ethiopian_Music_Chart_Logo_Design-11.png" alt="" className="logoimg" />

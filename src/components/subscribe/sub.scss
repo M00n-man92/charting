@@ -1,12 +1,13 @@
 .subscribe {
-    display: flex;
+    display: none;
+    &.active{
+        display: flex;
     flex-direction: column;
     z-index: 40;
     position: fixed;
     top: 60px;
     left: 470px;
-    &.active{
-        display: none;
+        
     }
     .sub {
         display: flex;

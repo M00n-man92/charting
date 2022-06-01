@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Navigation({open, setOpen}) {
     return (
 
-        <div className={'navigation '+(!open && "active")}>
+        <div className={'navigation '+(open && "active")}>
             <div className="inside">
                 <div className="logo">
                     <img src="/assets/Ethiopian_Music_Chart_Logo_Design-11.png" alt="" className="logoimg" />
