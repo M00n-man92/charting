@@ -18,12 +18,12 @@ import "../../fonts/Poppins-Thin.ttf"
 import Footer from '../footer/Footer'
 
 
-export default function Chart({open,setOpen}) {
+export default function Chart({ open, setOpen }) {
     const [on, setOn] = useState(false)
     const [social, setSocial] = useState(true)
     const [tableSocilas, setTableSocials] = useState(true)
     const [sec, setSec] = useState(null)
-    
+
     const first = { "Weekly": 535891, "May_21": 2688256, "May_17": 2152365, "meta_may_17": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 10 days ago 4 minutes, 58 seconds 2,152,365 views", "meta_may_21": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 13 days ago 4 minutes, 58 seconds 2,688,256 views", "link": "https://www.youtube.com/embed/Sbjl4OmYKwE", "Artist": "Kal Kin", "Song": " Eshi Kezias | እሺ ከዚያስ " }
     const jsonfile = require("./lastlastone.json")
     // const data=require("./data")
@@ -41,7 +41,7 @@ export default function Chart({open,setOpen}) {
             console.log(itemm)
         }
     }
-    return (<div className={'chart '+(open && "active")}>
+    return (<div className={'chart ' + (open && "active")}>
         <div className="container">
             <div className="title">
                 <h1>TOP 20 SONGS OF THE WEEK</h1>
@@ -177,136 +177,146 @@ export default function Chart({open,setOpen}) {
             <table className='tableing'>
                 <tbody className='tablebody'>
                     {jsonfile.map((item, index) => (
-                        <>{on ? (<><tr className='tablerow'>
-                            <td className='tablenumber'>
-                                {index + 2}
+                        <>{on ? (<>
+                            <tr className='tablerow'>
+                                <td className='tablenumber'>
+                                    {index + 2}
 
-                            </td>
-                            <td className='tableimage'>
+                                </td>
+                                <td className='tableimage'>
 
-                                {/* <iframe className='embededdiv' src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                    {/* <iframe className='embededdiv' src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
 
 
-                                <img src={item.img} alt="" />
-                            </td>
-                            <td className='tableinfo' onClick={(e) => {
-                                setOn(!on)
-                                setSec(index)
-                            }}>
-                                <div className="tableartistinfo">
-                                    <span className="tableartistinfoname">
-                                        {item.Song}
-                                    </span>
-                                    <span className="tableartistinfosong">
-                                        {item.Artist}
-                                    </span>
-                                </div>
-                                <hr />
-                                <div className="tablepositoin">
-                                    <div className="lastweekspositoin">
-                                        <span className="lastweeking">
-                                            Last week position
+                                    <img src={item.img} alt="" />
+                                </td>
+                                <td className='tableinfo' onClick={(e) => {
+                                    setOn(!on)
+                                    setSec(index)
+                                }}>
+                                    <div className="tableartistinfo">
+                                        <span className="tableartistinfoname">
+                                            {item.Song}
                                         </span>
-                                        <span className="lastweekingnumb">
-                                            4
+                                        <span className="tableartistinfosong">
+                                            {item.Artist}
                                         </span>
                                     </div>
-                                    <div className="verticalposition">
-
-                                    </div>
-                                    <div className="lastweekspositoin">
-                                        <span className="lastweeking">
-                                            Week in chart
-                                        </span>
-                                        <span className="lastweekingnumb">
-                                            5
-                                        </span>
-                                    </div>
-                                    <div className="verticalposition">
-
-                                    </div>
-                                    <div className="lastweekspositoin">
-                                        <span className="lastweeking">
-                                            Peak position
-                                        </span>
-                                        <span className="lastweekingnumb">
-                                            1
-                                        </span>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td className="tableicons" onClick={()=>{setTableSocials(!tableSocilas)} }>
-                                <div className="divicons" >
-                                    {tableSocilas || sec!==index? (<FeedIcon className="socialicon" onClick={() => { setTableSocials(false) 
-                                    setSec(index)}} />) : (
-                                        <div className="secondicons">
-
-                                            <div className="socialinfo">
-
-                                                <InstagramIcon className='socialiconone' />
-                                                <div className="info">
-                                                    <span>Instagram</span>
-                                                </div>
-                                            </div>
-                                            <div className="socialinfo">
-
-                                                <FacebookIcon className='socialiconone' />
-                                                <div className="info">
-                                                    <span>Facebook</span>
-                                                </div>
-                                            </div>
-                                            <div className="socialinfo">
-
-                                                <TwitterIcon className='socialiconone' />
-                                                <div className="info">
-                                                    <span>Twitter</span>
-                                                </div>
-                                            </div>
-                                            <div className="socialinfo">
-
-                                                <TelegramIcon className='socialiconone' />
-                                                <div className="info">
-                                                    <span>Telegram</span>
-                                                </div>
-                                            </div>
-                                            <div className="socialinfo">
-
-                                                <LinkIcon className='socialiconone' />
-                                                <div className="info">
-                                                    <span>Copy link</span>
-                                                </div>
-                                            </div>
+                                    <hr />
+                                    <div className="tablepositoin">
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                Last week position
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                4
+                                            </span>
+                                        </div>
+                                        <div className="verticalposition">
 
                                         </div>
-                                    )}
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                Week in chart
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                5
+                                            </span>
+                                        </div>
+                                        <div className="verticalposition">
+
+                                        </div>
+                                        <div className="lastweekspositoin">
+                                            <span className="lastweeking">
+                                                Peak position
+                                            </span>
+                                            <span className="lastweekingnumb">
+                                                1
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td className="tableicons" onClick={() => { setTableSocials(!tableSocilas) }}>
+                                    <div className="divicons" >
+                                        {tableSocilas || sec !== index ? (<FeedIcon className="socialicon" onClick={() => {
+                                            setTableSocials(false)
+                                            setSec(index)
+                                        }} />) : (
+                                            <div className="secondicons">
+
+                                                <div className="socialinfo">
+
+                                                    <InstagramIcon className='socialiconone' />
+                                                    <div className="info">
+                                                        <span>Instagram</span>
+                                                    </div>
+                                                </div>
+                                                <div className="socialinfo">
+
+                                                    <FacebookIcon className='socialiconone' />
+                                                    <div className="info">
+                                                        <span>Facebook</span>
+                                                    </div>
+                                                </div>
+                                                <div className="socialinfo">
+
+                                                    <TwitterIcon className='socialiconone' />
+                                                    <div className="info">
+                                                        <span>Twitter</span>
+                                                    </div>
+                                                </div>
+                                                <div className="socialinfo">
+
+                                                    <TelegramIcon className='socialiconone' />
+                                                    <div className="info">
+                                                        <span>Telegram</span>
+                                                    </div>
+                                                </div>
+                                                <div className="socialinfo">
+
+                                                    <LinkIcon className='socialiconone' />
+                                                    <div className="info">
+                                                        <span>Copy link</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        )}
 
 
-                                </div>
-                            </td>
-                        </tr>
+                                    </div>
+                                </td>
+                            </tr>
                             {index === sec ? (
-                                <tr className='secarea'>
-                                    <td>
+                                <>
+                                    <tr className='secarea'>
+                                        <td>
 
-                                    </td>
-                                    <td colSpan={5}>
-                                        <div className="divide">
-                                            <iframe src={item.link} className='embededdiv' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </td>
+                                        <td colSpan={5}>
+                                            <div className="divide">
+                                                <iframe src={item.link} className='embededdiv' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                                        </div>
+                                            </div>
 
 
-                                    </td>
+                                        </td>
 
-                                </tr>
+                                    </tr>
+                                    
+                                </>
                             ) : (
                                 <tr style={{ display: "none" }} >
 
                                 </tr>
                             )}
-
-                        </>) : (
+                           <tr className='linerow'>
+                                        <td colSpan={7} className="newtd">
+                                            <hr />
+                                        </td>
+                                    </tr>
+                        </>) : (<>
                             <tr className='tablerow' >
                                 <td className='tablenumber'>
                                     {index + 2}
@@ -367,11 +377,13 @@ export default function Chart({open,setOpen}) {
                                     </div>
 
                                 </td>
-                                <td className="tableicons" onClick={()=>{setTableSocials(!tableSocilas)}}>
+                                <td className="tableicons" onClick={() => { setTableSocials(!tableSocilas) }}>
                                     <div className="divicons">
-                                        {tableSocilas || sec!==index? (
-                                            <FeedIcon className="socialicon" onClick={(e) => { setTableSocials(false) 
-                                            setSec(index)}} />
+                                        {tableSocilas || sec !== index ? (
+                                            <FeedIcon className="socialicon" onClick={(e) => {
+                                                setTableSocials(false)
+                                                setSec(index)
+                                            }} />
                                         ) : (
                                             <div className="secondicons">
 
@@ -418,6 +430,13 @@ export default function Chart({open,setOpen}) {
                                     </div>
                                 </td>
                             </tr>
+                            <tr className='linerow'>
+                                <td colSpan={12} className="newtd">
+                                    <hr />
+                                </td>
+                            </tr>
+
+                        </>
                         )}
                         </>
                     ))}
@@ -425,6 +444,6 @@ export default function Chart({open,setOpen}) {
                 </tbody>
             </table>
         </div>
-        
+
     </div>)
 }

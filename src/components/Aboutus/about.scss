@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    &.active {
+        opacity: 0.7;
+    }
+    .header{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        h1{
+            font-family: "Poppins-Bold";
+            color: crimson;
+
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .info{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+            display: flex;
+           
+            p{
+                text-align: center;
+                font-family: "Poppins-Regular";
+                color: crimson; 
+                font-size: 16px;
+
+            }
+        }
+    }
+
+}

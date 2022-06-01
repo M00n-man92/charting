@@ -16,13 +16,14 @@ function App() {
                 <Switch>
 
                     {/* <Route exact path="/">
-                        
+                        <Chart />
                         
                     </Route> */}
                     <Route exact path="/about">
-                        <About />
+                        <About open={openMenu} setOpen={setOpenMenu}/>
 
                     </Route>
+
                     <div className="app">
                         <Navigation open={openMenu} setOpen={setOpenMenu}/>
                     <Sub open={openMenu} setOpen={setOpenMenu} />
