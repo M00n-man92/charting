@@ -4,17 +4,17 @@ import Button from "@mui/material/Button";
 import './sub.scss'
 import Navigation from '../navigation/Navigation';
 import Footer from '../footer/Footer';
-export default function Sub() {
+export default function Sub({open, setOpen}) {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [lastName, setLastName] = useState("")
     return (
-        <div className='subscribe'>
-            <Navigation/>
+        <div className={'subscribe '+(open && "active")}>
+            
             <div className='sub'>
                 <div className="borderd">
                     <div className="first">
-                        <span>SUBSCRIBE TO EMC</span>
+                        <span>Subscribe to EMC</span>
                         
                     </div>
                     <div className="second">
@@ -22,7 +22,8 @@ export default function Sub() {
                             <TextField className='texting' label="First Name"
                                 onChange={(e) => setName(e.target.value)}
                                 fullWidth
-                                type="text" />
+                                type="text" 
+                                />
                         </div>
                         <div className="textarea">
                             <TextField className='texting' label="Last Name"
@@ -38,14 +39,14 @@ export default function Sub() {
                         </div>
                     </div>
                     <div className="third">
-                        <button onClick={(e) => (console.log("clicked"))}>
-                            SUBSCRIBE
+                        <button onClick={() => {setOpen(!open)}}>
+                            Subscribe
                         </button>
                     </div>
 
                 </div>
             </div>
-            <Footer/>
+         
         </div>
     )
 }

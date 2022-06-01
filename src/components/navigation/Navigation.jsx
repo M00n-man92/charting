@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import './navigation.scss'
 import { Link } from 'react-router-dom'
 
-export default function Navigation() {
+export default function Navigation({open, setOpen}) {
     return (
 
-        <div className='navigation'>
+        <div className={'navigation '+(!open && "active")}>
             <div className="inside">
                 <div className="logo">
                     <img src="/assets/Ethiopian_Music_Chart_Logo_Design-11.png" alt="" className="logoimg" />
@@ -29,11 +29,11 @@ export default function Navigation() {
                         </Link>
                     </div>
                     <div className="sub">
-                        <Link to="subscribe">
-                            <button >
+                      
+                            <button onClick={()=>setOpen(!open)}>
                                 Subscribe
                             </button>
-                        </Link>
+                      
                     </div>
                 </div>
             </div>

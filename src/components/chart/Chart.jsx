@@ -18,11 +18,12 @@ import "../../fonts/Poppins-Thin.ttf"
 import Footer from '../footer/Footer'
 
 
-export default function Chart() {
+export default function Chart({open,setOpen}) {
     const [on, setOn] = useState(false)
     const [social, setSocial] = useState(true)
     const [tableSocilas, setTableSocials] = useState(true)
     const [sec, setSec] = useState(null)
+    
     const first = { "Weekly": 535891, "May_21": 2688256, "May_17": 2152365, "meta_may_17": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 10 days ago 4 minutes, 58 seconds 2,152,365 views", "meta_may_21": "Kal Kin - Eshi Kezias | እሺ ከዚያስ - New Ethiopian Music 2022 (Official Video) by Hope Music Ethiopia 13 days ago 4 minutes, 58 seconds 2,688,256 views", "link": "https://www.youtube.com/embed/Sbjl4OmYKwE", "Artist": "Kal Kin", "Song": " Eshi Kezias | እሺ ከዚያስ " }
     const jsonfile = require("./lastlastone.json")
     // const data=require("./data")
@@ -40,8 +41,7 @@ export default function Chart() {
             console.log(itemm)
         }
     }
-    return (<div className='chart'>
-        <Navigation />
+    return (<div className={'chart '+(!open && "active")}>
         <div className="container">
             <div className="title">
                 <h1>TOP 20 SONGS OF THE WEEK</h1>
@@ -425,7 +425,6 @@ export default function Chart() {
                 </tbody>
             </table>
         </div>
-        <Footer />
-
+        
     </div>)
 }

@@ -3,30 +3,41 @@ import About from "./components/Aboutus/About"
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Sub from "./components/subscribe/Sub";
 import './app.css'
-function App(){
+import './app.scss'
+import { useState } from 'react';
+import Navigation from "./components/navigation/Navigation";
+import Footer from "./components/footer/Footer";
+function App() {
 
-
-    return(
-        <div className="App">
+    const [openMenu, setOpenMenu] = useState(false)
+    return (
+        <>
             <Router>
-    <Switch>
-      
-        <Route exact path="/">
-        <Chart />
-        </Route>
-        <Route path="/about">
-            <About/>
+                <Switch>
 
-        </Route>
-        <Route path="/subscribe">
+                    {/* <Route exact path="/">
+                        
+                        
+                    </Route> */}
+                    <Route exact path="/about">
+                        <About />
+
+                    </Route>
+                    <div className="app">
+                        <Navigation open={openMenu} setOpen={setOpenMenu}/>
+                    <Sub open={openMenu} setOpen={setOpenMenu} />
+                    <Chart open={openMenu} setOpen={setOpenMenu}/>
+                    <Footer open={openMenu}/>
+                    </div>
+                    {/* <Route path="/subscribe">
 <Sub/>
-        </Route>
-        
-        </Switch>
-        </Router>
-            
+        </Route> */}
 
-        </div>
+                </Switch>
+            </Router>
+
+
+        </>
     )
 }
 export default App;

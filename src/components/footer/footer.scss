@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &.active{
+        opacity: 0.7;
+    }
     .inside {
         display: flex;
         align-items: center;

@@ -1,6 +1,11 @@
 .chart {
     display: flex;
     flex-direction: column;
+    
+    &.active{
+        z-index: 0;
+        opacity: 0.7;
+    }
     .container {
         height: 500px;
         // background-color: #f7d046;
