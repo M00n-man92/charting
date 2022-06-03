@@ -24,3 +24,7 @@
   src: local("Poppins-ExtraBold (1)"), url("./fonts/Poppins-ExtraBold\ \(1\).ttf");  
   font-family: "Poppins-ExtraBold (1)";
 }
+@font-face {
+  font-family: "Rockids Regular";
+  src: local("Rockids Regular"),url("./fonts/Rockids Regular.otf") format("opentype");
+}

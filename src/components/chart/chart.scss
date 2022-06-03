@@ -10,10 +10,10 @@
         height: 500px;
         // background-color: #f7d046;
 
-        background-image: url(../../unnamed.png);
+        background-image: url(../../EMC_Landing_Page_Graphic_Final-01.jpg);
         background-size: cover;
         background-position: 50% 50%;
-        // background-color: blueviolet;
+        // batitlckground-color: blueviolet;
         width: inherit;
         display: flex;
         flex-direction: column;
@@ -24,10 +24,11 @@
             justify-content: center;
             h1 {
                 font-style: italic;
-                font-size: 50px;
+                font-size: 97px;
                 color: #f7d046;
+                letter-spacing: 4px;
                 // src: local("Poppins-ExtraBold (1)"), url("../../fonts/Poppins-ExtraBold\ \(1\).ttf");
-                font-family: "Poppins-ExtraBold (1)";
+                font-family: "Rockids Regular";
             }
             // margin-left: 350px;
         }
@@ -95,12 +96,12 @@
                     .songtitle {
                         // margin-bottom: 2px;
                         span {
-                            font-family: Trebuchet MS, sans-serif;
+                            // font-family: Trebuchet MS, sans-serif;
                             font-size: 22px;
                             font-weight: 800;
                             color: #f7d046;
-                            // src: local("Poppins-Bold"), url("../../fonts/Poppins-SemiBold.ttf");
-                            font-family: "Poppins-Regular";
+                            // src: local("Bold"), url("../../fonts/Poppins-SemiBold.ttf");
+                            font-family: "Poppins-ExtraBold (1)";
                             // top100\src\fonts\Poppins-SemiBold.ttf
                         }
                     }
@@ -110,10 +111,10 @@
                             // top100\src\fonts\Poppins-B.ttf
                             font-size: 19px;
                             font-weight: 400;
-                            font-family: Trebuchet MS, sans-serif;
+                            // font-family: Trebuchet MS, sans-serif;
                             color: #f7d046;
                             // src: local("Poppins-Thin"), url("../../fonts/Poppins-Bold.ttf");
-                            font-family: "Poppins-Thin";
+                            font-family: "Poppins-Regular";
                         }
                     }
                 }
@@ -483,9 +484,9 @@
                                     font-weight: 300;
                                 }
                                 .lastweekingnumb {
-                                    font-family: Trebuchet MS, sans-serif;
-                                    src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
-                                    font-family: "Poppins-Bold";
+                                    // font-family: Trebuchet MS, sans-serif;
+                                    // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
+                                    font-family: "Poppins-SemiBold";
                                     font-size: 16px;
                                     color: crimson;
                                     font-weight: 400;
