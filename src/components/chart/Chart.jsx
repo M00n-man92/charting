@@ -83,7 +83,7 @@ export default function Chart({ open, setOpen }) {
                     </div>
                 </div>
                 <div className="socilas">{
-                    social ? (<svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" className='socialicon' onClick={() => {
+                    social ? (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 19" className='socialicon' onClick={() => {
                         setSocial(false)
                     }}>
 <path id="Icon_open-share-boxed" data-name="Icon open-share-boxed" d="M2.063,0A2.064,2.064,0,0,0,0,2.036V16.964A2.064,2.064,0,0,0,2.063,19H14.438A2.064,2.064,0,0,0,16.5,16.964V13.571H13.75v2.714h-11V2.714h5.5V0ZM16.5,0V2.714A10.872,10.872,0,0,0,5.665,12.3,5.447,5.447,0,0,1,11,8.143h5.5v2.714L22,5.429Z" fill="#f7d046"/>
@@ -243,7 +243,7 @@ export default function Chart({ open, setOpen }) {
                                 </td>
                                 <td className="tableicons" onClick={() => { setTableSocials(!tableSocilas) }}>
                                     <div className="divicons" >
-                                    {tableSocilas || sec !== index ?(<svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" onClick={() => {
+                                    {tableSocilas || sec !== index ?(<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 19" onClick={() => {
                                             setTableSocials(false)
                                             setSec(index)
                                         }}>
@@ -385,7 +385,7 @@ export default function Chart({ open, setOpen }) {
                                 </td>
                                 <td className="tableicons" onClick={() => { setTableSocials(!tableSocilas) }}>
                                     <div className="divicons">
-                                        {tableSocilas || sec !== index ? (<svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" onClick={() => {
+                                        {tableSocilas || sec !== index ? (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 19" onClick={() => {
                                             setTableSocials(false)
                                             setSec(index)
                                         }}>
