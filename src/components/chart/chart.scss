@@ -1,3 +1,10 @@
+@import "../../global.scss";
+@media (max-width:40em){
+    .chart{
+        max-width: 40em;
+        // background-color: blue;
+    }
+}
 .chart {
     display: flex;
     flex-direction: column;
@@ -5,6 +12,7 @@
     &.active {
         z-index: 0;
         opacity: 0.7;
+        
     }
     .container {
         height: 500px;
@@ -17,11 +25,20 @@
         width: inherit;
         display: flex;
         flex-direction: column;
+        @media (max-width:40em) {
+            height: 252px;
+            max-width: 40em;
+            width: inherit;
+        }
         .title {
             margin-top: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
+            @media (max-width:40em) {
+                margin-top: 24px;
+                justify-content: center;
+            }
             h1 {
                 font-style: italic;
                 font-size: 97px;
@@ -29,6 +46,10 @@
                 letter-spacing: 4px;
                 // src: local("Poppins-ExtraBold (1)"), url("../../fonts/Poppins-ExtraBold\ \(1\).ttf");
                 font-family: "Rockids Regular";
+                @media (max-width:40em) {
+                    font-size: 40px;
+                    letter-spacing:1px;
+                }
             }
             // margin-left: 350px;
         }
@@ -43,6 +64,12 @@
             justify-content: space-evenly;
             margin-right: 20%;
             @media (max-width: 40em) {
+                justify-content: space-between;
+                margin-left: 1%;
+                margin-right: 2%;
+                min-height: inherit;
+                width: 90%;
+                // background-color: blueviolet;
             }
             .spot {
                 // background-color: red;
@@ -51,27 +78,45 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                @media (max-width:40em) {
+                    // margin-right: 20px;
+                    // margin-left: 220px;
+                    justify-content: center;
+                }
                 span {
-                    @media (min-width: 75em) {
-                        font-size: 40px;
-                    }
+                    
                     font-size: 30px;
                     color: #f7d046;
                     font-weight: 400;
                     // src: local("Poppins-Bold"), url("../../fonts/Poppins-Bold.ttf");
                     font-family: "Poppins-Bold";
+                    @media (max-width:40em) {
+                        font-size: 40px;
+                        font-family: "Rockids Regular";
+                    }
                 }
             }
             .embeded {
                 // flex: 3;
                 margin-left: 20px;
-                min-width: 400px;
+                width: 400px;
                 height: 75%;
                 // background-color: black;
+                @media (max-width:40em) {
+                    // background-color: red;
+                    margin-left: 5px;
+                    width: 1230px;
+                    height: 83px;
+
+                }
                 iframe {
-                    min-width: 25em;
-                    min-height: 225px;
+                    width: 25em;
+                    height: 225px;
+                    @media (max-width:40em) {
+                        width: 123px;
+                       height: 120px;
+                        // background-color: red;
+                    }
                 }
                 img {
                     width: 400px;
@@ -86,6 +131,10 @@
                 // flex: 5;
                 display: flex;
                 flex-direction: column;
+                @media (max-width:40em) {
+                    // background-color: aqua;
+
+                }
                 // align-items: center;
                 .song {
                     margin-top: 20px;
@@ -93,7 +142,15 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    @media (max-width:40em) {
+                        justify-self: unset;
+                        margin-top: 5px;
+                    }
                     .songtitle {
+                        @media (max-width:40em) {
+                            background-color: brown;
+                            max-height: 20px;
+                        }
                         // margin-bottom: 2px;
                         span {
                             // font-family: Trebuchet MS, sans-serif;
@@ -102,6 +159,10 @@
                             color: #f7d046;
                             // src: local("Bold"), url("../../fonts/Poppins-SemiBold.ttf");
                             font-family: "Poppins-ExtraBold (1)";
+                            @media (max-width:40em) {
+                                font-size: 14px;
+                                text-align: center;
+                            }
                             // top100\src\fonts\Poppins-SemiBold.ttf
                         }
                     }
@@ -115,6 +176,9 @@
                             color: #f7d046;
                             // src: local("Poppins-Thin"), url("../../fonts/Poppins-Bold.ttf");
                             font-family: "Poppins-Regular";
+                            @media (max-width:40em) {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -124,6 +188,9 @@
                     border-bottom: none;
                     width: 90%;
                     color: #f7d046;
+                    @media (max-width:40em) {
+                        width: 90%;
+                    }
                     // margin-top:20px;
                     // margin-bottom: ;
                 }
@@ -143,6 +210,10 @@
                         align-items: center;
                         justify-content: start;
                         flex-direction: column;
+                        @media (max-width:40em) {
+                            max-width: 60px;
+
+                        }
                         .jio {
                             // font-family: Trebuchet MS, sans-serif;
                             // top100\src\fonts\Poppins-Bold.ttf
@@ -151,6 +222,9 @@
                             font-size: 13px;
                             // font-weight: 400;
                             color: #f7d046;
+                            @media (max-width:40em) {
+                                font-size: 12px;
+                            }
                         }
                         .num {
                             font-family: Trebuchet MS, sans-serif;
@@ -159,8 +233,12 @@
                             font-size: 19px;
                             font-weight: 400;
                             color: #f7d046;
-                            src: local("Poppins-Bold"), url("../../fonts/Poppins-Light.ttf");
+                            // src: local("Poppins-Bold"), url("../../fonts/Poppins-Light.ttf");
                             font-family: "Poppins-Bold";
+                            @media (max-width:40em) {
+                                font-size: 16px;
+                                margin-top: 0px;
+                            }
                         }
                     }
                     .verticalline {

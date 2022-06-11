@@ -27,7 +27,7 @@ function App() {
                     <div className="app">
                         <Navigation open={openMenu} setOpen={setOpenMenu}/>
                     <Sub open={openMenu} setOpen={setOpenMenu} />
-                    <Chart open={openMenu} setOpen={setOpenMenu}/>
+                    <Chart open={openMenu} setOpen={setOpenMenu} />
                     <Footer open={openMenu}/>
                     </div>
                     {/* <Route path="/subscribe">
