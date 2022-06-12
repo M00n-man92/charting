@@ -563,6 +563,7 @@ margin-top: 5px;
                             border-top: none;
                             @media (max-width:40em) {
                                 margin-top: 50px;
+                                margin-bottom: -10px;
                                 max-width: 20em;
                                 // width: 0em;
                             }
@@ -618,20 +619,10 @@ margin-top: 5px;
                         //     justify-content: center;
                         // flex-wrap:wrap;
                         // justify-content: center;
-                            max-height: 82px;
+                            max-height: 83px;
                             max-width: 90px;
                         }
-                        iframe {
-                            border: none;
-                            height: 120px;
-                            width: 140px;
-                        }
-                        iframe:hover {
-                            transition: 0.3s all ease-in-out;
-                            // height: 200px;
-                            // width: 300px;
-                        }
-                        // padding: 12px 15px;
+                       
                         img {
                             object-fit: cover;
                             width: 140px;
@@ -651,7 +642,8 @@ margin-top: 5px;
                         @media (max-width:40em) {
                            position: relative;
                            left: -90px;
-                           top: 60px;
+                           top: 50px;
+                           width: 300px;
                         //    background-color: blue;
                         }
                         .tableartistinfo {
@@ -698,7 +690,7 @@ margin-top: 5px;
                            @media (max-width:40em) {
                             //    background-color: red;
                                margin-right: 20px;
-                               width: 300px;
+                               max-width: 300px;
                            }
                             //    background-color: red;
                             .lastweekspositoin {
@@ -755,6 +747,9 @@ margin-top: 5px;
                         @media (max-width:40em) {
                             // background-color: red;
                             // margin-right: ;
+                            position: relative;
+                            top: 0px;
+                            right: 100px;
                             margin-right: 100px;
                             width: 30px;
                         }
@@ -777,6 +772,12 @@ margin-top: 5px;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
+                                @media (max-width:40em) {
+                                    position: relative;
+                                    top: 20px;
+                                    right: 10px;
+                                    
+                                }
 
                                 .socialinfo {
                                     display: flex;
@@ -787,12 +788,21 @@ margin-top: 5px;
                                     border-radius: 3px;
                                     margin-top: 10px;
                                     height: 25px;
+                                    @media (max-width:40em) {
+                                        width: 40px;
+                                        border: none;
+                                        margin-top: 5px;
+                                        // background-color: red;
+                                    }
                                     .socialiconone {
                                         color: crimson;
-                                        font-size: 16px;
+                                        font-size: 22px;
                                     }
                                     .info {
                                         margin-left: 2px;
+                                        @media (max-width:40em) {
+                                            display: none;
+                                        }
                                         span {
                                             color: crimson;
                                             font-size: 11px;

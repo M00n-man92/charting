@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width:40em) {
+        max-width: 40em;
+        height: 180px;
+        justify-content: unset;
+    }
     &.active{
         opacity: 0.7;
     }
@@ -16,6 +21,12 @@
         // background-color: blueviolet;
         // margin-left: 100px;
         justify-content: space-between;
+        @media (max-width:40em) {
+            min-width: 10em;
+            width: 30em;
+            justify-content: unset;
+            // background-color: blue;
+        }
         .logo {
             display: flex;
             align-items: center;
@@ -27,12 +38,19 @@
             //    margin-left: 130px;
 
             // background-color: blue;
-
+            
             img {
                 margin-left: 10px;
                 object-fit: contain;
                 height: 120px;
                 width: 120px;
+                @media (max-width:40em) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            img:nth-child(2){
+                display: none;
             }
         }
         .info {
@@ -42,6 +60,9 @@
             display: flex;
             align-items: center;
             justify-content:end;
+            @media (max-width:40em) {
+                margin-left: 0px;
+            }
             .single {
                 margin-left: 25px;
                 span {
