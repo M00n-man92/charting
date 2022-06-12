@@ -1,56 +1,50 @@
 @import "../../global.scss";
 @media (max-width:40em){
-    .chart{
-        max-width: 40em;
-        // background-color: blue;
-    }
+  .chart{
+    max-width: 40em;
+    // background-color: blue;
+  }
 }
 .chart {
+  display: flex;
+  flex-direction: column;
+  &.active {
+    z-index: 0;
+    opacity: 0.7;
+  }
+  .container {
+    height: 500px;
+    background-image: url(../../EMC_Landing_Page_Graphic_Final-01.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: inherit;
     display: flex;
     flex-direction: column;
-
-    &.active {
-        z-index: 0;
-        opacity: 0.7;
-        
+    @media (max-width:40em) {
+      height: 252px;
+      max-width: 40em;
+      width: inherit;
     }
-    .container {
-        height: 500px;
-        // background-color: #f7d046;
-
-        background-image: url(../../EMC_Landing_Page_Graphic_Final-01.jpg);
-        background-size: cover;
-        background-position: 50% 50%;
-        // batitlckground-color: blueviolet;
-        width: inherit;
-        display: flex;
-        flex-direction: column;
-        @media (max-width:40em) {
-            height: 252px;
-            max-width: 40em;
-            width: inherit;
+  .title {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      @media (max-width:40em) {
+        margin-top: 24px;
+        justify-content: center;
+      }
+      h1 {
+        font-style: italic;
+        font-size: 97px;
+        color: #f7d046;
+        letter-spacing: 4px;
+        font-family: "Rockids Regular";
+          @media (max-width:40em) {
+            font-size: 40px;
+            letter-spacing:1px;
+          }
         }
-        .title {
-            margin-top: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            @media (max-width:40em) {
-                margin-top: 24px;
-                justify-content: center;
-            }
-            h1 {
-                font-style: italic;
-                font-size: 97px;
-                color: #f7d046;
-                letter-spacing: 4px;
-                // src: local("Poppins-ExtraBold (1)"), url("../../fonts/Poppins-ExtraBold\ \(1\).ttf");
-                font-family: "Rockids Regular";
-                @media (max-width:40em) {
-                    font-size: 40px;
-                    letter-spacing:1px;
-                }
-            }
             // margin-left: 350px;
         }
         .contain {
@@ -557,7 +551,8 @@ margin-top: 5px;
             @media (max-width:40em) {
                 margin-left: 1%;
                 margin-right: 1%;
-                max-width: 40em;
+                width: 25em;
+                // background-color: red;
             }
             .tablebody {
                 .linerow {
@@ -567,7 +562,9 @@ margin-top: 5px;
                             width: 750px;
                             border-top: none;
                             @media (max-width:40em) {
-                                max-width: 40em;
+                                margin-top: 50px;
+                                max-width: 20em;
+                                // width: 0em;
                             }
                         }
                     }
@@ -581,7 +578,10 @@ margin-top: 5px;
                     
                     @media (max-width:40em) {
                         margin-top: 50px;
-                       height: 50px;
+                        // max-width: 25em;
+                        // width: 100px;
+                        // background-color: red;
+                    //    height: 50px;
                         // background-color: red;
                     }
                     .tablerow:hover {
@@ -610,13 +610,13 @@ margin-top: 5px;
                         height: 120px;
                         width: 140px;
                         @media (max-width:40em) {
-                            position: relative;
-                            top: 50px;
+                            // position: relative;
+                            // top: 50px;
                             // background-color: red;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        flex-wrap:wrap;
+                        //     display: flex;
+                        //     align-items: center;
+                        //     justify-content: center;
+                        // flex-wrap:wrap;
                         // justify-content: center;
                             max-height: 82px;
                             max-width: 90px;
@@ -649,7 +649,10 @@ margin-top: 5px;
                         flex-direction: column;
                         margin-bottom: 5px;
                         @media (max-width:40em) {
-                        //    background-color: red;
+                           position: relative;
+                           left: -90px;
+                           top: 60px;
+                        //    background-color: blue;
                         }
                         .tableartistinfo {
                             display: flex;
@@ -657,8 +660,8 @@ margin-top: 5px;
                             flex-direction: column;
                             margin-bottom: 10px;
                             @media (max-width:40em) {
-                                margin-bottom: 0px;
-                                // background-color: red;
+                                margin-left: 50px;
+                                // background-color: brown;
                             }
                             .tableartistinfoname {
                                 // font-family: Trebuchet MS, sans-serif;
@@ -668,6 +671,7 @@ margin-top: 5px;
                                 color: crimson;
                                 font-weight: 400;
                                 @media (max-width:40em) {
+                                    text-align: center;
                                     font-size: 14px;
 
                                 }
@@ -691,6 +695,11 @@ margin-top: 5px;
                             align-items: center;
 
                             justify-content: space-between;
+                           @media (max-width:40em) {
+                            //    background-color: red;
+                               margin-right: 20px;
+                               width: 300px;
+                           }
                             //    background-color: red;
                             .lastweekspositoin {
                                 margin-left: 10px;
@@ -706,6 +715,10 @@ margin-top: 5px;
                                     font-size: 13px;
                                     color: crimson;
                                     font-weight: 300;
+                                    @media (max-width:40em) {
+                                        font-size: 12px;
+                                        text-align: center;
+                                    }
                                 }
                                 .lastweekingnumb {
                                     // font-family: Trebuchet MS, sans-serif;
@@ -714,6 +727,9 @@ margin-top: 5px;
                                     font-size: 16px;
                                     color: crimson;
                                     font-weight: 400;
+                                    @media (max-width:40em) {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                             .verticalposition {
@@ -736,6 +752,12 @@ margin-top: 5px;
 
                         width: 100px;
                         transition: all 0.5s ease-in-out;
+                        @media (max-width:40em) {
+                            // background-color: red;
+                            // margin-right: ;
+                            margin-right: 100px;
+                            width: 30px;
+                        }
                         .divicons {
                             height: inherit;
                             transition: all 0.5s ease-in-out;
@@ -805,11 +827,18 @@ margin-top: 5px;
                 }
                 .secarea {
                     // background-color: black;
-
+                   
                     .divide {
+                        @media (max-width:40em) {
+                            margin-top: 40px;
+                        }
                         .embededdiv {
                             height: 400px;
                             width: 700px;
+                            @media (max-width:40em) {
+                                max-width: 22em;
+                                max-height: 175px;
+                            }
                         }
                         span {
                             margin-left: 20px;
