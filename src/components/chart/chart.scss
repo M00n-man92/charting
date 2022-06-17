@@ -531,11 +531,15 @@ margin-top: 5px;
         justify-content: center;
         @media (max-width:40em) {
             margin-top: 10%;
+            // background-color: #f7d046;
            
         }
         hr {
             width: 100%;
             border-bottom: 1px solid #dddddd;
+            @media (max-width:40em) {
+                // background-color: blue;
+            }
         }
         .tableing {
             // margin-left: 100px;
@@ -544,27 +548,44 @@ margin-top: 5px;
             border-collapse: separate;
             margin-left: 20%;
             margin-right: 20%;
-            font-size: 0.9em;
+            // font-size: 0.9em;
             width: 750px;
-
+            // background-color: red;
             border-spacing: 0px 10px;
             @media (max-width:40em) {
-                margin-left: 1%;
-                margin-right: 1%;
-                width: 25em;
+                margin-top: 1%;
+                margin-left: 2%;
+                margin-right: 2%;
+                max-width: 10em;
+                width: 0px;
+                // display: none;
                 // background-color: red;
             }
             .tablebody {
+                @media (max-width:40em) {
+                    // background-color: black;
+                    width: 200px;
+                }
                 .linerow {
+                    @media (max-width:40em) {
+                        width:200px;
+                        // background-color: red;
+                    }
                     .newtd {
+                        @media (max-width:40em) {
+                            width: 100px;
+                            max-width: 200px;
+                            // background-color: blue;
+                        }
                         hr {
                             border-bottom: 1px solid #dddddd;
                             width: 750px;
                             border-top: none;
                             @media (max-width:40em) {
-                                margin-top: 50px;
+                                // margin-top: 50px;
                                 margin-bottom: -10px;
-                                max-width: 20em;
+                                max-width: 250em;
+                                width:25em;
                                 // width: 0em;
                             }
                         }
@@ -578,14 +599,19 @@ margin-top: 5px;
                     margin-top: 50px;
                     
                     @media (max-width:40em) {
-                        margin-top: 50px;
-                        // max-width: 25em;
+                        // background-color: red;
+                        // margin-top: 50px;
+                        width: 200px;
+                        height: 200px;
                         // width: 100px;
                         // background-color: red;
                     //    height: 50px;
                         // background-color: red;
                     }
                     .tablerow:hover {
+                        @media (max-width:40em) {
+                            width: 100px;
+                        }
                         color: #333333;
                     }
                     .tablenumber {
@@ -629,7 +655,7 @@ margin-top: 5px;
                             height: inherit;
                             border-radius: 5px;
                             @media (max-width:40em) {
-                            //    margin-top: 40px;
+                               margin-bottom: 58px;
                                 width: 90px;
                                 height: 83px;
                             }
@@ -750,8 +776,9 @@ margin-top: 5px;
                             position: relative;
                             top: 0px;
                             right: 100px;
-                            margin-right: 100px;
+                            // margin-right: 100px;
                             width: 30px;
+
                         }
                         .divicons {
                             height: inherit;
@@ -774,8 +801,9 @@ margin-top: 5px;
                                 align-items: center;
                                 @media (max-width:40em) {
                                     position: relative;
-                                    top: 20px;
+                                    top: 0px;
                                     right: 10px;
+                                    background-color:aqua;
                                     
                                 }
 
@@ -837,17 +865,25 @@ margin-top: 5px;
                 }
                 .secarea {
                     // background-color: black;
-                   
+                   @media (max-width:40em) {
+                    width: 20em;
+                    max-width: 20em;
+                    // background-color: red;
+                   }
                     .divide {
                         @media (max-width:40em) {
-                            margin-top: 40px;
+                            width: 20em;
+                            // background-color: blue;
+                            // margin-top: 40px;
                         }
                         .embededdiv {
                             height: 400px;
                             width: 700px;
                             @media (max-width:40em) {
-                                max-width: 22em;
+                                max-width: 20em;
                                 max-height: 175px;
+                                width: 310px;
+                                // background-color: brown;
                             }
                         }
                         span {
@@ -860,6 +896,11 @@ margin-top: 5px;
                     }
                 }
                 tr:hover {
+                    @media (max-width:40em) {
+                        // width: 20px;
+                        // max-width: 100px;
+                        // background-color: blue;
+                    }
                     background-color: #f8f8f8;
                 }
             }
