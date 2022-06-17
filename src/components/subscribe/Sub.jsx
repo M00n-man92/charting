@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import { Typography, Modal, Button, Box } from '@mui/material';
 import './sub.scss'
 import Navigation from '../navigation/Navigation';
 import Footer from '../footer/Footer';
@@ -9,7 +9,17 @@ export default function Sub({open, setOpen}) {
     const [email, setEmail] = useState("")
     const [lastName, setLastName] = useState("")
     return (
+<Modal
+              open={open}
+              onClose={() => {
+                setOpen(false);
+              }}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
         <div className={'subscribe '+(open && "active")}>
+            
+              
             
             <div className='sub'>
                 <div className="borderd">
@@ -46,7 +56,8 @@ export default function Sub({open, setOpen}) {
 
                 </div>
             </div>
-         
+            
         </div>
+        </Modal>
     )
 }
