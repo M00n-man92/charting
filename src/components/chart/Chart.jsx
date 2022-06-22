@@ -11,7 +11,7 @@ import LinkIcon from '@mui/icons-material/Link';
 import { ArrowForwardIosOutlined, ArrowBackIosNewOutlined } from '@mui/icons-material'
 
 export default function Chart({ open, setOpen }) {
-  const [on, setOn] = useState(false);
+  const [on, setOn] = useState(true);
   const [social, setSocial] = useState(true);
   const [tableSocilas, setTableSocials] = useState(true);
   const [sec, setSec] = useState(null);

@@ -1,116 +1,109 @@
 .subscribe {
-    display: none;
-    &.active{
-        display: flex;
+  display: none;
+  &.active {
+    display: flex;
     flex-direction: column;
     z-index: 40;
     position: fixed;
     top: 60px;
     left: 470px;
-    @media (max-width:40em) {
-        top: 70px;
-        left: 20px;
+    @media (max-width: 40em) {
+      top: 70px;
+      left: 20px;
     }
-        
+  }
+  .sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    @media (max-width: 40em) {
+      border-radius: 5px;
     }
-    .sub {
+
+    .borderd {
+      margin-top: 20px;
+      // border: 1px solid white;
+      height: 75vh;
+      width: 30vw;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      @media (max-width: 40em) {
+        width: 20em;
+        // background-color: red;
+      }
+      .first {
+        margin-top: 30px;
+
+        span {
+          font-size: 18px;
+          font-family: "Poppins-Regular";
+          font-weight: 400;
+        }
+      }
+      .second {
+        margin-top: 20px;
+
+        .textarea {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          width: inherit;
+
+          .texting {
+            font-family: "Poppins-Regular";
+            // border: 1px solid black;
+            // z-index: ;
+            width: 25vw;
+            @media (max-width: 40em) {
+              width: 200px;
+              // background-color: red;
+            }
+          }
+        }
+      }
+      .third {
+        margin-top: 20px;
+        width: 15vw;
+        height: 40px;
+        border: 1.5px solid crimson;
+        background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: white;
-        border-radius: 10px;
-        @media (max-width:40em) {
-
-            border-radius: 5px;
+        @media (max-width: 40em) {
+          width: 150px;
+          // background-color: red;
         }
-       
-        .borderd {
-            margin-top: 20px;
-            // border: 1px solid white;
-            height: 75vh;
-            width: 30vw;
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            align-items: center;
-            @media (max-width:40em) {
-           width: 20em;
-                // background-color: red;
-            }
-            .first {
-                margin-top: 30px;
-               
-                span {
-                    font-size: 18px;
-                    font-family: "Poppins-Regular";
-                    font-weight: 400;
-                }
-            }
-            .second {
-                margin-top: 20px;
-                
-                .textarea {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    width: inherit;
-                    
-
-                    .texting {
-                        font-family: "Poppins-Regular";
-                        // border: 1px solid black;
-                        // z-index: ;
-                        width: 25vw;
-                        @media (max-width:40em) {
-                            width: 200px;
-                            // background-color: red;
-                        }
-                    }
-                }
-            }
-            .third {
-                margin-top: 20px;
-                width: 15vw;
-                height: 40px;
-                border: 1.5px solid crimson;
-                background-color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                @media (max-width:40em) {
-                    width: 150px;
-                    // background-color: red;
-                }
-                button {
-                    background-color: white;
-                    border: none;
-                    cursor: pointer;
-                    color: crimson;
-                    font-size: 16px;
-                    font-family: "Poppins-Regular";
-
-
-                }
-            }
-            .third:hover{
-                margin-top: 20px;
-                width: 15vw;
-                height: 40px;
-                border: none;
-                background-color: crimson;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                button {
-                    background-color: crimson;
-                    border: none;
-                    cursor: pointer;
-                    color: white;
-                    font-size: 16px;
-                    font-family: "Poppins-Regular";
-
-
-                }
-            }
+        button {
+          background-color: white;
+          border: none;
+          cursor: pointer;
+          color: crimson;
+          font-size: 16px;
+          font-family: "Poppins-Regular";
         }
+      }
+      .third:hover {
+        margin-top: 20px;
+        width: 15vw;
+        height: 40px;
+        border: none;
+        background-color: crimson;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          background-color: crimson;
+          border: none;
+          cursor: pointer;
+          color: white;
+          font-size: 16px;
+          font-family: "Poppins-Regular";
+        }
+      }
     }
+  }
 }
