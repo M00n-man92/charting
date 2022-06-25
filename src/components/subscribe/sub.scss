@@ -64,46 +64,102 @@
           }
         }
       }
-      .third {
-        margin-top: 20px;
-        width: 15vw;
-        height: 40px;
-        border: 1.5px solid crimson;
-        background-color: white;
+      .thewu {
         display: flex;
         align-items: center;
-        justify-content: center;
-        @media (max-width: 40em) {
-          width: 150px;
+        justify-content: space-evenly;
+        width: 25vw;
+        margin-top: 20px;
+        @media (max-width:40em) {
+          width: 200px;
           // background-color: red;
         }
-        button {
+        // background-color: red;
+        .third {
+          // margin-top: 20px;
+          // margin-left: 10px;
+          width: 10vw;
+          height: 40px;
+          border: 1.5px solid crimson;
           background-color: white;
-          border: none;
-          cursor: pointer;
-          color: crimson;
-          font-size: 16px;
-          font-family: "Poppins-Regular";
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // background-color: red;
+          @media (max-width: 40em) {
+            width: 70px;
+              height: 30px;
+            // background-color: red;
+          }
+          button {
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            color: crimson;
+            font-size: 16px;
+            font-family: "Poppins-Regular";
+            @media (max-width:40em) {
+              width: 70px;
+              height: 30px;
+              font-size: 11px;
+            }
+          }
         }
-      }
-      .third:hover {
-        margin-top: 20px;
-        width: 15vw;
-        height: 40px;
-        border: none;
-        background-color: crimson;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        button {
-          background-color: crimson;
+        .third:hover {
+          // margin-top: 20px;
+          width: 10vw;
+          height: 40px;
           border: none;
-          cursor: pointer;
-          color: white;
-          font-size: 16px;
-          font-family: "Poppins-Regular";
+          background-color: crimson;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media (max-width: 40em) {
+            width: 70px;
+              height: 30px;
+            // background-color: red;
+          }
+          button {
+            background-color: crimson;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-family: "Poppins-Regular";
+            
+          }
+        }
+        .cancel {
+          width: 10vw;
+          height: 40px;
+          border: 1.5px solid #303a52;          
+          background-color: #303a52;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // background-color: red;
+          @media (max-width: 40em) {
+            width: 72px;
+              height: 30px;
+            // background-color: red;
+          }
+          button {
+            background-color: #303a52;            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-family: "Poppins-Regular";
+            @media (max-width:40em) {
+              width: 70px;
+              height: 30px;
+              font-size: 11px;
+            }
+          }
         }
       }
     }
   }
 }
+// 
+//
+//           

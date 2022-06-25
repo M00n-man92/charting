@@ -48,11 +48,19 @@ export default function Sub({ open, setOpen }) {
                   type="email" />
               </div>
             </div>
-            <div className="third">
-              <button onClick={() => { setOpen(!open) }}>
-                Subscribe
-              </button>
+            <div className="thewu">
+              <div className="third">
+                <button onClick={() => { setOpen(!open) }}>
+                  Subscribe
+                </button>
+              </div>
+              <div className="cancel">
+                <button onClick={() => { setOpen(!open) }}>
+                  Cancel
+                </button>
+              </div>
             </div>
+
 
           </div>
         </div>
