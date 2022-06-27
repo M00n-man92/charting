@@ -810,76 +810,87 @@
                 margin-bottom: 22px;
                 color: crimson;
               }
-
-              .secondicons {
-                // background-color: red;
-                display: none;
-
+              .iconsline {
                 display: flex;
+                // align-items: center;
+                // justify-content: center;
                 flex-direction: column;
-                align-items: center;
                 @media (max-width: 40em) {
-                  position: relative;
-                  top: 20px;
-                  right: -8px;
-                  // background-color:aqua;
-                  width: 40px;
+                  // margin-left: 20px;
+// position: relative;
+// left: 0px;
+// background-color: red;
                 }
-
+                //
                 .socialinfo {
+                  width: 100%;
+                  cursor: pointer;
+                  // padding: 2px 2px;
+                  border: 0.5px solid crimson;
+                  border-radius: 2px;
                   display: flex;
                   align-items: center;
+                  margin-bottom: 7px;
                   justify-content: space-evenly;
-                  width: 80px;
-                  border: 0.5px solid crimson;
-                  border-radius: 3px;
-                  margin-top: 10px;
-                  height: 25px;
+                  // background-color: red;
+                  height: 22px;
+
+                 
                   @media (max-width: 40em) {
-                    width: 20px;
+                    margin-bottom: 10px;
+
+                    // width: 10%;
                     border: none;
-                    margin-top: 10px;
-                    // background-color: red;
-                    // margin-bottom: 5px;
-                  }
-                  .socialiconone {
-                    color: crimson;
-                    font-size: 22px;
                   }
                   .info {
-                    margin-left: 2px;
+                    color: crimson;
+                    font-size: 11px;
                     @media (max-width: 40em) {
                       display: none;
                     }
-                    span {
+                  }
+                  .socialicon {
+                    margin-top: 22px;
+                    margin-right: 5px;
+                    color: crimson;
+                    font-size: 22px;
+                    @media (max-width: 40em) {
                       color: crimson;
-                      font-size: 11px;
+                      font-size: 22px;
                     }
                   }
                 }
                 .socialinfo:hover {
+                  cursor: pointer;
+                  padding: 2px 2px;
+                  border: 0.5px solid #dddddd;
+                  border-radius: 2px;
                   display: flex;
                   align-items: center;
-                  justify-content: space-evenly;
-                  width: 80px;
+                  margin-bottom: 7px;
                   background-color: crimson;
-                  // border: 0.5px solid crimson;
-                  border-radius: 3px;
-                  margin-top: 10px;
-                  height: 25px;
-                  .socialiconone {
-                    color: white;
-                    font-size: 16px;
+
+                  // background-color: #dddddd;
+                  @media (max-width: 40em) {
+                    border: none;
+                    background-color: unset;
                   }
                   .info {
-                    margin-left: 2px;
-                    span {
+                    color: white;
+                    font-size: 11px;
+                  }
+                  .socialicon {
+                    margin-right: 5px;
+                    color: white;
+                    font-size: 22px;
+                    @media (max-width: 40em) {
                       color: white;
-                      font-size: 11px;
+                      font-size: 22px;
                     }
                   }
                 }
               }
+              
             }
           }
         }

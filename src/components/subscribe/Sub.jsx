@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import TextField from "@mui/material/TextField";
-import { Typography, Modal, Button, Box } from '@mui/material';
+import { Modal } from '@mui/material';
 import './sub.scss'
-import Navigation from '../navigation/Navigation';
-import Footer from '../footer/Footer';
 export default function Sub({ open, setOpen }) {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -18,9 +16,6 @@ export default function Sub({ open, setOpen }) {
       aria-describedby="modal-modal-description"
     >
       <div className={'subscribe ' + (open && "active")}>
-
-
-
         <div className='sub'>
           <div className="borderd">
             <div className="first">
