@@ -121,7 +121,11 @@ export default function Chart({ open, setOpen }) {
                     </div>
                   </div>
                   </WhatsappShareButton>
-                  <FacebookShareButton url={window.location.href} title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
+                  <FacebookShareButton
+                    url={window.location.href}
+                    title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}
+                    quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}
+                  >
                     <div className="socialinfo">
                       <FacebookIcon className='socialicon' />
                       <div className="info">
@@ -299,7 +303,12 @@ export default function Chart({ open, setOpen }) {
                                   </div>
                                 </div>
                                 </WhatsappShareButton>
-                                <FacebookShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
+                                <FacebookShareButton
+                                  url={window.location.href}
+                                  title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
                                     <div className="info">
@@ -450,7 +459,12 @@ export default function Chart({ open, setOpen }) {
                                   </div>
                                 </div>
                                 </WhatsappShareButton>
-                                <FacebookShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
+                                <FacebookShareButton
+                                  url={window.location.href}
+                                  // // title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // // summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
                                     <div className="info">
