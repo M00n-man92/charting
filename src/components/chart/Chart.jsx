@@ -112,7 +112,7 @@ export default function Chart({ open, setOpen }) {
                       <span>Instagram</span>
                     </div>
                   </div>
-                  <FacebookShareButton url={window.location.href} quote={`${first.Song} is at 1 position this week, check it out.`}>
+                  <FacebookShareButton url={window.location.href} quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                     <div className="socialinfo">
                       <FacebookIcon className='socialicon' />
                       <div className="info">
@@ -120,7 +120,7 @@ export default function Chart({ open, setOpen }) {
                       </div>
                     </div>
                   </FacebookShareButton>
-                  <TwitterShareButton url={window.location.href} title={`${first.Song} is at 1 position this week, check it out.`}>
+                  <TwitterShareButton url={window.location.href} title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                     <div className="socialinfo">
                       <TwitterIcon className='socialicon' />
                       <div className="info">
@@ -128,7 +128,7 @@ export default function Chart({ open, setOpen }) {
                       </div>
                     </div>
                   </TwitterShareButton>
-                  <TelegramShareButton url={window.location.href} title={`${first.Song} is at 1 position this week, check it out.`}>
+                  <TelegramShareButton url={window.location.href} title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                     <div className="socialinfo">
                       <TelegramIcon className='socialicon' />
                       <div className="info">
@@ -157,7 +157,7 @@ export default function Chart({ open, setOpen }) {
         <div className="slidingness">
           <div className="slidertitle">
             <span>
-              THIS WEEK IN THE CHART
+              Ethiopia Music Chart this week IN THE CHART
             </span>
           </div>
           <div className="slidertitle">
@@ -287,7 +287,7 @@ export default function Chart({ open, setOpen }) {
                                     <span>Instagram</span>
                                   </div>
                                 </div>
-                                <FacebookShareButton url={window.location.href} quote={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <FacebookShareButton url={window.location.href} quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
                                     <div className="info">
@@ -295,7 +295,7 @@ export default function Chart({ open, setOpen }) {
                                     </div>
                                   </div>
                                 </FacebookShareButton>
-                                <TwitterShareButton url={window.location.href} title={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <TwitterShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <TwitterIcon className='socialicon' />
                                     <div className="info">
@@ -303,7 +303,7 @@ export default function Chart({ open, setOpen }) {
                                     </div>
                                   </div>
                                 </TwitterShareButton>
-                                <TelegramShareButton url={window.location.href} title={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <TelegramShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <TelegramIcon className='socialicon' />
                                     <div className="info">
@@ -435,7 +435,7 @@ export default function Chart({ open, setOpen }) {
                                     <span>Instagram</span>
                                   </div>
                                 </div>
-                                <FacebookShareButton url={window.location.href} quote={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <FacebookShareButton url={window.location.href} quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
                                     <div className="info">
@@ -443,7 +443,7 @@ export default function Chart({ open, setOpen }) {
                                     </div>
                                   </div>
                                 </FacebookShareButton>
-                                <TwitterShareButton url={window.location.href} title={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <TwitterShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <TwitterIcon className='socialicon' />
                                     <div className="info">
@@ -451,7 +451,7 @@ export default function Chart({ open, setOpen }) {
                                     </div>
                                   </div>
                                 </TwitterShareButton>
-                                <TelegramShareButton url={window.location.href} title={`${item.Song} is at ${index + 2} position this week, check it out.`}>
+                                <TelegramShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <TelegramIcon className='socialicon' />
                                     <div className="info">
