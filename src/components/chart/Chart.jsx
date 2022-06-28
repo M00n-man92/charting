@@ -290,7 +290,7 @@ export default function Chart({ open, setOpen }) {
                               </svg>
                             ) : (
                               <div className='iconsline'>
-                                <WhatsappShareButton url={window.location.href} title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
+                                <WhatsappShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                 <div className="socialinfo">
                                   
                                   <WhatsApp className='socialicon' />
@@ -441,7 +441,7 @@ export default function Chart({ open, setOpen }) {
                               </svg>
                             ) : (
                               <div className='iconsline'>
-                                 <WhatsappShareButton url={window.location.href} title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
+                                 <WhatsappShareButton url={window.location.href} title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                 <div className="socialinfo">
                                  
                                   <WhatsApp className='socialicon' />
