@@ -308,6 +308,7 @@ export default function Chart({ open, setOpen }) {
                                   title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
                                   quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
                                   summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
                                 >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
@@ -461,9 +462,11 @@ export default function Chart({ open, setOpen }) {
                                 </WhatsappShareButton>
                                 <FacebookShareButton
                                   url={window.location.href}
-                                  // // title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+
+                                  title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
                                   quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  // // summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
                                 >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
