@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import { FacebookShareButton, TelegramShareButton, TwitterShareButton } from "react-share";
+import {
+  FacebookShareButton,
+  TelegramShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
 import "./chart.scss"
 
-import InstagramIcon from '@mui/icons-material/Instagram';
+// import WhatsApp from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkIcon from '@mui/icons-material/Link';
+import WhatsApp from '@mui/icons-material/WhatsApp';
 
 import { ArrowForwardIosOutlined, ArrowBackIosNewOutlined } from '@mui/icons-material'
 
@@ -106,12 +112,15 @@ export default function Chart({ open, setOpen }) {
                 </svg>
               ) : (
                 <div className='iconsline'>
+                  <WhatsappShareButton url={window.location.href} quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                   <div className="socialinfo">
-                    <InstagramIcon className='socialicon' />
+                    
+                    <WhatsApp className='socialicon' />
                     <div className="info">
-                      <span>Instagram</span>
+                      <span>WhatsApp</span>
                     </div>
                   </div>
+                  </WhatsappShareButton>
                   <FacebookShareButton url={window.location.href} quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                     <div className="socialinfo">
                       <FacebookIcon className='socialicon' />
@@ -281,12 +290,15 @@ export default function Chart({ open, setOpen }) {
                               </svg>
                             ) : (
                               <div className='iconsline'>
+                                <WhatsappShareButton url={window.location.href} quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                                 <div className="socialinfo">
-                                  <InstagramIcon className='socialicon' />
+                                  
+                                  <WhatsApp className='socialicon' />
                                   <div className="info">
-                                    <span>Instagram</span>
+                                    <span>WhatsApp</span>
                                   </div>
                                 </div>
+                                </WhatsappShareButton>
                                 <FacebookShareButton url={window.location.href} quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
@@ -429,12 +441,15 @@ export default function Chart({ open, setOpen }) {
                               </svg>
                             ) : (
                               <div className='iconsline'>
+                                 <WhatsappShareButton url={window.location.href} quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}>
                                 <div className="socialinfo">
-                                  <InstagramIcon className='socialicon' />
+                                 
+                                  <WhatsApp className='socialicon' />
                                   <div className="info">
-                                    <span>Instagram</span>
+                                    <span>WhatsApp</span>
                                   </div>
                                 </div>
+                                </WhatsappShareButton>
                                 <FacebookShareButton url={window.location.href} quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}>
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
@@ -484,6 +499,6 @@ export default function Chart({ open, setOpen }) {
           </tbody>
         </table>
       </div>
-    </div>
+    </div >
   )
 }
