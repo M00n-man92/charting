@@ -344,7 +344,7 @@
     justify-content: center;
     height: 300px;
     @media (max-width: 40em) {
-      margin-top: 15px;
+      margin-top: 20px;
       max-width: 40em;
       height: 222px;
     }
@@ -383,13 +383,16 @@
       overflow-x: hidden;
       // margin-bottom: 100px;
       @media (max-width: 40em) {
-        margin-top: 25px;
+        margin-top: 55px;
         max-width: 40em;
       }
       .slidertitle {
         display: flex;
         // align-items: center;
         flex-direction: column;
+        @media (max-width:40em) {
+          // margin-bottom: 20px;
+        }
         span {
           // font-family: Impact, sans-serif;
           color: crimson;
