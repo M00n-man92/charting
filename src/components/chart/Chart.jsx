@@ -123,7 +123,7 @@ export default function Chart({ open, setOpen }) {
                   </WhatsappShareButton>
                   <FacebookShareButton
                     url={window.location.href}
-                    title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}
+                    // title={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}
                     quote={`${first.Song} is at number 1 on the Ethiopia Music Chart. Check it out:`}
                   >
                     <div className="socialinfo">
@@ -304,11 +304,13 @@ export default function Chart({ open, setOpen }) {
                                 </div>
                                 </WhatsappShareButton>
                                 <FacebookShareButton
-                                  url={window.location.href}
-                                  title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  url={"www.google.com"}
+                                  quote={"hellowoeld"}
+                                  // title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  hashtag={"# aome thing here"}
                                 >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
@@ -461,12 +463,13 @@ export default function Chart({ open, setOpen }) {
                                 </div>
                                 </WhatsappShareButton>
                                 <FacebookShareButton
-                                  url={window.location.href}
-                                  description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-
-                                  title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
-                                  summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  url={"www.google.com"}
+                                  // description={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  quote={"helloworld"}
+                                  // title={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // quote={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  // summary={`${item.Song} is at number ${index + 2} on the Ethiopia Music Chart. Check it out:`}
+                                  hashtag={"# aome thing here"}
                                 >
                                   <div className="socialinfo">
                                     <FacebookIcon className='socialicon' />
